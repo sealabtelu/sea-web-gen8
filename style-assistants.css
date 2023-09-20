@@ -1,0 +1,151 @@
+div {
+    margin: 0;
+    padding: 0;
+}
+.section-content {
+    padding: 0;
+}
+#section-assis1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#section-assis1 h1 {
+    font-size: 10vh ;
+}
+
+#section-assis2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    border-radius: 2vh;
+}
+#section-assis3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    border-radius: 2vh;
+}
+#section-assis4 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vh;
+    width: 83.2vw;
+}
+#section-assis5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    border-radius: 2vh;
+    width: 83.2vw;
+}
+#section-assis6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    border-radius: 2vh;
+    width: 83.2vw;
+}
+
+.list-assis {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90vw;
+}
+.list-assis .data-assisten {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.list-assis-prak {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 82.3vw;
+}
+
+.data-assisten{
+    width: 40vh;
+    height: 65vh;
+    background-color: #ffffff;
+    padding: 4vh;
+    border-radius: 2vh;
+}
+.data-assisten-prak{
+    width: 35vh;
+    height: 60vh;
+    background-color: #ffffff;
+    padding: 3vh;
+    border-radius: 2vh;
+    padding-top: 0;
+}
+
+.data-assisten-banyak{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: space-evenly;
+    width: 83.2vw;
+    height: auto;
+    background-color: transparent;
+    border-radius: 2vh;
+    padding-top: 0vh;
+}
+.data-assisten h1, .data-assisten-banyak h1 {
+    font-size: 4vh;
+    padding: 1.5vh 0;
+}
+
+.img-assis img{
+    width: 40vh;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 3vh;
+}
+
+.img-assis-prak img {
+    width: 35vh;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 3vh;
+}
+
+@media only screen and (max-width: 900px), 
+            screen and (min-height: 60vw) {
+    .img-assis img {
+        width: 20vh;
+        height: 20vh;
+    }
+    .img-assis-prak img{
+        width: 15vh;
+        height: 20vh;
+    }
+    .section-content p{
+        font-size: 1.2vw;
+    }
+    .data-assisten {
+        width: 20vh;
+        height: 50vh;
+    }
+    .data-assisten-prak{
+        width: 15vh;
+        height: 45vh;
+    }
+    #section-assis4, #section-assis5, #section-assis6{
+        width: 86.9vh;
+    }
+    .data-assisten h1, .data-assisten-banyak h1 {
+        font-size: 2vw;
+    }
+}

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SEA Laboratory Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style-assistants.css">
+    <link rel="icon" href="asset/index/seachan-serious.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body id="body">
+    <header>
+        <nav class="navbar">
+            <i class="fa fa-bars" aria-hidden="true" style="position: absolute;top:5vh;right: 6vw;width: 5vw;transform: translateX(50%);" onclick="ShowMenu()"></i>
+            <div>
+                <a href="index.html#section1" class="logo"><img id="logo" src="asset/index/Logo SEA.png"></a>
+            </div>
+            <div class="ul-container" id="menu">
+                <i class="fa bi-arrow-bar-right" style="position: absolute;top:0;left: -50vw;width: 5vw;height: 100vh;padding-top: 5vh;padding-left: 45vw;opacity: 0;" onclick="CloseMenu()"></i>
+                <ul>
+                    <li><a href="index.html#section2" id="navlist1">PRAKTIKUM</a></li>
+                    <li><a href="index.html#section3" id="navlist2">EVENT</a></li>
+                    <li><a href="index.html#section4" id="navlist3">ABOUT</a></li>
+                    <li><a href="index.html#section5" id="navlist4">LINKS</a></li>
+                    <li><i class="bi bi-sun" id="change" onclick="TurnDark()"></i></li>
+                    <li><i class="bi bi-moon" id="changeback" onclick="TurnLight()"></i></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="containere">
+            <section class="section" id="section1">
+                <div class="section-content" id="section-assis1" style="z-index: 1;">
+                    <div>
+                        <img src="">
+                    </div>
+                    <div>
+                        <h1>ASSISTANTS</h1>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="section2">
+                <div class="section-content" id="section-assis2" style="background-color: #c9eefa;">
+                    <div class="data-assisten" id="asis1">
+                        <h1>WAKORDAS</h1>
+                        <br>
+                        <div class="img-assis">
+                            <img src="asset/assistans/Faraday_ARA.png">
+                        </div>
+                        <div style="text-align: left;">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p>NAMA</p>
+                                    </td>
+                                    <td>
+                                        <p>: CETTA MAULANA ANDHIKA</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>KODE</p>
+                                    </td>
+                                    <td>
+                                        <p>: CMA</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>PANGGILAN</p>
+                                    </td>
+                                    <td>
+                                        <p>: CETTA</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="data-assisten" id="box2">
+                        <h1>KORDAS</h1>
+                        <br>
+                        <div class="img-assis">
+                            <img src="asset/assistans/Faraday_ARA.png">
+                        </div>
+                        <div style="text-align: left;">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p>NAMA</p>
+                                    </td>
+                                    <td>
+                                        <p>: FARADAY BARR FATAHILLAH</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>KODE</p>
+                                    </td>
+                                    <td>
+                                        <p>: ARA</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>PANGGILAN</p>
+                                    </td>
+                                    <td>
+                                        <p>: BOBE, FARADAY</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="data-assisten" id="box1">
+                        <h1>KOOR RISET</h1>
+                        <br>
+                        <div class="img-assis">
+                            <img src="asset/assistans/Aldo_DAO.png">
+                        </div>
+                        <div style="text-align: left;">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p>NAMA</p>
+                                    </td>
+                                    <td>
+                                        <p>: ALDO NITEHE LASE</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>KODE</p>
+                                    </td>
+                                    <td>
+                                        <p>: DAO</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>PANGGILAN</p>
+                                    </td>
+                                    <td>
+                                        <p>: ALDO</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="section3">
+                <div class="section-content" id="section-assis3">
+                    <div class="data-assisten" id="box3" style="background-color: #c9eefa;">
+                        <h1>SEKRETARIS</h1>
+                        <br>
+                        <div class="img-assis">
+                            <img src="asset/assistans/Alim_SAM.png">
+                        </div>
+                        <div style="text-align: left;">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p>NAMA</p>
+                                    </td>
+                                    <td>
+                                        <p>: SAM ALIM RAMADHAN</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>KODE</p>
+                                    </td>
+                                    <td>
+                                        <p>: SAM</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>PANGGILAN</p>
+                                    </td>
+                                    <td>
+                                        <p>: ALIM</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="data-assisten" id="box4" style="background-color: #c9eefa;">
+                        <h1>BENDAHARA</h1>
+                        <br>
+                        <div class="img-assis">
+                            <img src="asset/assistans/Azmi_ATS.png">
+                        </div>
+                        <div style="text-align: left;">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p>NAMA</p>
+                                    </td>
+                                    <td>
+                                        <p>: AZMI TAQIUDDIN SYAH</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>KODE</p>
+                                    </td>
+                                    <td>
+                                        <p>: ATS</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>PANGGILAN</p>
+                                    </td>
+                                    <td>
+                                        <p>: AZMI, AMI</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="data-assisten" id="box5" style="background-color: #c9eefa;">
+                        <h1>SEKRETARIS</h1>
+                        <br>
+                        <div class="img-assis">
+                            <img src="asset/assistans/KinanR_KRZ.png">
+                        </div>
+                        <div style="text-align: left;">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p>NAMA</p>
+                                    </td>
+                                    <td>
+                                        <p>: KINANTI RAHAYU AZ-ZAHRA</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>KODE</p>
+                                    </td>
+                                    <td>
+                                        <p>: KRZ</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>PANGGILAN</p>
+                                    </td>
+                                    <td>
+                                        <p>: KINAN</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="section4" style="background-color: #c9eefa;">
+                <div class="section-content" id="section-assis4">
+                    <div class="data-assisten-banyak">
+                        <h1>INVENTARIS</h1>
+                        <div class="list-assis">
+                            <div class="data-assisten" id="box8">
+                                <div class="img-assis">
+                                    <img src="asset/assistans/Farrel_REL.png">
+                                    <br>
+                                    <div style="text-align: left;">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p>NAMA</p>
+                                                </td>
+                                                <td>
+                                                    <p>: MUHAMMAD FARREL AHADI TAMA</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>KODE</p>
+                                                </td>
+                                                <td>
+                                                    <p>: REL</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>PANGGILAN</p>
+                                                </td>
+                                                <td>
+                                                    <p>: FARREL</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-assisten" id="box7">
+                                <div class="img-assis">
+                                    <img src="asset/assistans/Andre_AND.png">
+                                    <br>
+                                    <div style="text-align: left;">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p>NAMA</p>
+                                                </td>
+                                                <td>
+                                                    <p>: ANDREAS WAHYU PRAYOGO</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>KODE</p>
+                                                </td>
+                                                <td>
+                                                    <p>: AND</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>PANGGILAN</p>
+                                                </td>
+                                                <td>
+                                                    <p>: ANDRE</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-assisten" id="box6">
+                                <div class="img-assis">
+                                    <img src="asset/assistans/Fadhil_FDZ.png">
+                                    <br>
+                                    <div style="text-align: left;">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p>NAMA</p>
+                                                </td>
+                                                <td>
+                                                    <p>: FADHIL DZIKRI AQILA</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>KODE</p>
+                                                </td>
+                                                <td>
+                                                    <p>: FDZ</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>PANGGILAN</p>
+                                                </td>
+                                                <td>
+                                                    <p>: FADHIL</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="section5" >
+                <div class="section-content" id="section-assis5">
+                    <div class="data-assisten-banyak">
+                        <h1>PUBLIC RELATIONS</h1>
+                        <div class="list-assis">
+                            <div class="data-assisten" id="box9" style="background-color: #c9eefa;">
+                                <div class="img-assis">
+                                    <img src="asset/assistans/Faraday_ARA.png">
+                                    <div style="text-align: left;">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p>NAMA</p>
+                                                </td>
+                                                <td>
+                                                    <p>: KINANTI ARIA WIDASWARA</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>KODE</p>
+                                                </td>
+                                                <td>
+                                                    <p>: KIN</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>PANGGILAN</p>
+                                                </td>
+                                                <td>
+                                                    <p>: KINAN</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-assisten" id="box10" style="background-color: #c9eefa;">
+                                <div class="img-assis">
+                                    <img src="asset/assistans/Axel_AXL.png">
+                                    <div style="text-align: left;">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p>NAMA</p>
+                                                </td>
+                                                <td>
+                                                    <p>: AXEL DAVID</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>KODE</p>
+                                                </td>
+                                                <td>
+                                                    <p>: AXL</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>PANGGILAN</p>
+                                                </td>
+                                                <td>
+                                                    <p>: AXEL</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-assisten" id="box11" style="background-color: #c9eefa;">
+                                <div class="img-assis">
+                                    <img src="asset/assistans/Faraday_ARA.png">
+                                    <div style="text-align: left;">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p>NAMA</p>
+                                                </td>
+                                                <td>
+                                                    <p>: SULTHAN NAUVAL ABDILLAH</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>KODE</p>
+                                                </td>
+                                                <td>
+                                                    <p>: </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>PANGGILAN</p>
+                                                </td>
+                                                <td>
+                                                    <p>: SULTHAN</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="section6" style="background-color: #c9eefa;">
+                <div class="section-content" id="section-assis6">
+                    <div class="data-assisten-banyak">
+                        <h1>PRAKTIKUM</h1>
+                        <div class="list-assis-prak">
+                            <div class="data-assisten-prak" id="box12">
+                                <div class="img-assis-prak">
+                                    <img src="asset/assistans/Panji_YNA.png">
+                                    <div style="text-align: left;">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p>NAMA</p>
+                                                </td>
+                                                <td>
+                                                    <p>: PANJI CHRISTOPER SILALAHI</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>KODE</p>
+                                                </td>
+                                                <td>
+                                                    <p>: YNA</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>PANGGILAN</p>
+                                                </td>
+                                                <td>
+                                                    <p>: PANJI</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-assisten-prak" id="box13">
+                                <div class="img-assis-prak">
+                                    <img src="asset/assistans/Yogas_YSH.png">
+                                    <div style="text-align: left;">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p>NAMA</p>
+                                                </td>
+                                                <td>
+                                                    <p>: YOHANNES YOGAS HERLAMBANG</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>KODE</p>
+                                                </td>
+                                                <td>
+                                                    <p>: YSH</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>PANGGILAN</p>
+                                                </td>
+                                                <td>
+                                                    <p>: YOGAS, YOG, GAS</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-assisten-prak" id="box14">
+                                <div class="img-assis-prak">
+                                    <img src="asset/assistans/Abyan_ARS.png">
+                                    <div style="text-align: left;">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p>NAMA</p>
+                                                </td>
+                                                <td>
+                                                    <p>: MUHAMMAD ABYAN RIDHAN SIREGAR</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>KODE</p>
+                                                </td>
+                                                <td>
+                                                    <p>: ARS</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>PANGGILAN</p>
+                                                </td>
+                                                <td>
+                                                    <p>: BYAN</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-assisten-prak" id="box15">
+                                <div class="img-assis-prak">
+                                    <img src="asset/assistans/Naja_SEF.png">
+                                    <div style="text-align: left;">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p>NAMA</p>
+                                                </td>
+                                                <td>
+                                                    <p>: SEF SOFA MAULANAJA</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>KODE</p>
+                                                </td>
+                                                <td>
+                                                    <p>: SEF</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>PANGGILAN</p>
+                                                </td>
+                                                <td>
+                                                    <p>: NAJA</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
