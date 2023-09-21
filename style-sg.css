@@ -78,7 +78,7 @@ div {
     object-fit: cover;
     border-radius: 2vh;
 }
-@media only screen and (max-width: 768px), 
+@media only screen and (max-width: 900px), 
             screen and (min-height: 60vw) {       
         #section-sg1{
             flex-direction: column;

@@ -149,3 +149,22 @@ div {
         font-size: 2vw;
     }
 }
+
+@media only screen and (max-width: 425px) {
+    #section-assis1 h1{
+        font-size: 7vw;
+    }
+    #section-assis2 {
+        flex-direction: column;
+    }
+    .data-assisten {
+        display: flex;
+        flex-direction: row;
+        width: 40vh;
+        height: 20vh;
+        padding: 1vh;
+    }
+    .data-assisten h1 {
+        padding: 0;
+    }
+}
