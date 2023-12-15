@@ -10,7 +10,7 @@ body {
 nav {
     overflow: hidden;
     background: transparent;
-    padding: 1.5vh 1.7vw;
+    padding: 1.75vh 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,19 +80,19 @@ nav div {
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 4vw;
+    gap: 2vw;
     padding-top: 2vw;
     padding-bottom: 15vw;
 }
 
 .button {
-    width: 10vw;
-    height: 5vw;
+    width: 5vw;
+    height: 2.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.5vw 2vw;
-    font-size: 2vw;
+    font-size: 1.3vw;
     text-decoration: none;
     color: #fff;
     background-color: #43C6F0;
@@ -178,6 +178,7 @@ nav div {
     border-radius: 0.7vw;
     font-size: 3vw;
     font-family: 'Cascadia Mono ExtraBold', sans-serif;
+    margin-top: 10vh;
 }
 
 .card {
@@ -271,7 +272,8 @@ nav div {
     color: #ffffff;
     display: inline-block;
     padding: 1vw;
-    margin-bottom: -30px;
+    margin-top: 10vh;
+    margin-bottom: 0;
     font-size: 3vw;
     font-family: 'Cascadia Mono ExtraBold', sans-serif;
 }
@@ -283,7 +285,6 @@ nav div {
 .logistics-card {
     display: flex;
     justify-content: space-around;
-    margin-top: 1vw;
 }
 
 .assistant-card img {
@@ -292,7 +293,6 @@ nav div {
     border-radius: 50%;
     object-fit: cover;
     object-position: 50% 30%;
-    margin-bottom: 2vw;
 }
 
 .assistant-card {
@@ -307,10 +307,12 @@ nav div {
     background-color: #43C6F0; 
     color: #fff;
     padding: 2vw 6vw;
-    padding-bottom: 0;
+    padding-bottom: 5vh;
     border-radius: 1vw;
     border: 0.3vw solid #FFF;
-    margin: 9vw 1.7vw;
+    margin: 0 1.7vw;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
     text-align: center;
     overflow: hidden;
 }
