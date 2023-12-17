@@ -1,157 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SEA Laboratory Web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="asset/index/seachan-serious.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="script.js">
+    <title>SEA Laboratory</title>
+    <link rel="icon" href="assets/logo-web.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="animations.js"></script>
 </head>
-<body id="body"> 
-    <header>
-        <nav class="navbar">
-            <i class="fa fa-bars" aria-hidden="true" style="position: absolute;top:5vh;right: 6vw;width: 5vw;transform: translateX(50%);" onclick="ShowMenu()"></i>
-            <div>
-                <a href="#section1" class="logo"><img id="logo" src="asset/index/Logo SEA.png"></a>
-            </div>
-            <div class="ul-container" id="menu">
-                <i class="fa bi-arrow-bar-right" style="position: absolute;top:0;left: -50vw;width: 5vw;height: 100vh;padding-top: 5vh;padding-left: 45vw;opacity: 0;" onclick="CloseMenu()"></i>
-                <ul>
-                    <li><a href="#section2" id="navlist1">PRAKTIKUM</a></li>
-                    <li><a href="#section3" id="navlist2">EVENT</a></li>
-                    <li><a href="#section4" id="navlist3">ABOUT</a></li>
-                    <li><a href="#section5" id="navlist4">LINKS</a></li>
-                    <li><i class="bi bi-sun" id="change" onclick="TurnDark()"></i></li>
-                    <li><i class="bi bi-moon" id="changeback" onclick="TurnLight()"></i></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="containere">
-            <section class="section" id="section1">
-                <div class="section-content" id="section-content1" style="z-index: 1;">
-                    <div class="group1-1">
-                        <h1>SEA<br>LABORATORY</h1>
-                        <p><em>Website Praktikum SEA Laboratory</em></p>
-                    </div>
-                    <div class="group2-1">
-                        <img src="asset/index/seachan-ganbatte.png" id="sea1">
-                    </div>
-                    <div class="group3-1">
-                        <img src="asset/index/seachan-serious.png" id="sea2">
-                    </div>
-                </div>
-                <div class="dek" id="dek">
-                    <img src="asset/index/Acsry.png">
-                </div>
-            </section>
-            <section class="section" id="section2" style="background-color: #c9eefa;">
-                <div class="section-content" id="section-content2">
-                    <div class="imag video">
-                        <a href="https://drive.google.com/file/d/1fL3nbxoMMx9LsT1bw_WI2BGrZ61yIfFO/view?usp=sharing" target="_blank">
-                            <div class="layer" id="box5">
-                                <p>VIDEO<br>PRAKTIKUM</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class ="prak">
-                        <div class="group-prak">
-                            <div>
-                                <a href="https://shorturl.at/uvwK7" target="_blank">
-                                    <div class="modul" id="box1">
-                                        <p>MODUL<br>PRAKTIKUM</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    <div class="tp" id="box2">
-                                        <p>TES<br>PENDAHULUAN</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="https://shorturl.at/hkBRZ" target="_blank">
-                                <div class="jadwalkel" id="box3">
-                                    <p>JADWAL<br>&<br>KELOMPOK</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section" id="section3">
-                <div class="section-content" id="section-content3">
-                    <div class="event-group">
-                        <div class="imag group1-3" >
-                            <a href="sg.html">
-                                <div class="layer">
-                                    <p>STUDY<br>GROUP</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="imag group2-3" >
-                            <a href="rg.html">
-                                <div class="layer">
-                                    <p>RESEARCH<br>GROUP</p>
-                                </div> 
-                            </a>
-                        </div> 
-                    </div>
-                </div>
-            </section>
-            <section class="section" id="section4" style="background-color: #c9eefa;">
-                <div class="section-content" id="section-content4">
-                    <div class="about">
-                        <div></div>
-                        <div>
-                            <h1 style="font-size: 6vh;">ABOUT</h1>
-                            <br>
-                            <p>SEA Laboratory (Software Engineering and Application) Lab yang berfokus pada pengembangan perangkat lunak (Software) dan Aplikasi.</p>
-                            <a href="assistants.html">
-                                <div class="assis" id = "box6">
-                                    <p>ASSISTANTS</p>
-                                </div>
-                            </a>
-                        </div>  
-                    </div>
-                    <div class="group-abt">
-                        <div></div>
-                        <img id = "box4" src="asset/index/seachan-smile.png">
-                    </div>
-                </div>
-            </section>
-            <section class="section" id="section5">
-                <div class="section-content" id="section-content5">
-                    <div>
-                        <h1 style="font-size: 6vw;">OUR LINKS</h1>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="socmed">
-                        <div>
-                            <a href="https://www.instagram.com/sea.laboratory/?hl=en" id="icon1" target="_blank"><i class="bi bi-instagram"></i></a>
-                        </div>
-                        <div>
-                            <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=748waapd" id="icon2" target="_blank"><i class="bi bi-line"></i></a>
-                        </div>
-                        <div>
-                            <a href="https://www.youtube.com/channel/UCIxFBfOtf-EZA_9A9Xb4EpQ" id="icon3" target="_blank"><i class="bi bi-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
+<body>
+    <nav class="navbar">
+        <img src="assets/SEA-logo.png" alt="Logo">
+        <div>
+            <a href="#home">HOME</a>
+            <a href="#programs">PROGRAMS</a>
+            <a href="#about">ABOUT</a>
+            <a href="#assistants">ASSISTANTS</a>
+            <a href="#lms">LMS</a>
         </div>
-        <script src="script.js">
-        </script>
-    </main>
+    </nav>
+
+    <div class="content section1" id="home">
+        <section>
+            <div class="welcome">WELCOME TO</div>
+            <div class="lab-text">SEA LABORATORY</div>
+            <div class="buttons">
+                <a href="#login" class="button" id="lms">LOGIN</a>
+                <a href="#explore" class="button explore" id="explore">EXPLORE</a>
+            </div>
+        </section>
+    </div>
+
+    <div class="content section2" id="programs">
+        <section>
+            <div class="section2-content">
+                <h2>PROGRAMS</h2>
+                <div class="card studygroup">
+                    <h3><b>STUDY GROUP</b></h3>
+                    <p>
+                        SEA Laboratory Study Group adalah komunitas belajar yang didedikasikan untuk membantu 
+                        anggotanya mengembangkan keterampilan di berbagai bidang teknologi informasi. 
+                        Dengan fokus pada lima divisi utama, study group ini memberikan kesempatan kepada 
+                        anggotanya untuk mengeksplorasi dan mendalami aspek-aspek kunci dalam dunia pengembangan 
+                        perangkat lunak.
+                    </p>
+                    <div class="study-card" style="background: linear-gradient(88deg, #2A84B7 0%, rgba(132, 59, 149, 0.50) 100%);">
+                        <img src="assets\sgfundamental_logo.png" alt="Study Group Fundamental">
+                        <div class="study-card-text">
+                            <h4>Fundamental</h4>
+                            <p>Divisi ini membantu anggota study group membangun dasar-dasar yang kuat dalam pemrograman.</p>
+                        </div>
+                    </div>
+                    <div class="study-card" style="background: linear-gradient(88deg, #2A84B7 0%, #407EE6 100%);">
+                        <img src="assets\sgdesktop_logo.png" alt="Study Group Fundamental">
+                        <div class="study-card-text">
+                            <h4>Desktop Development</h4>
+                            <p>Divisi ini mengeksplorasi pengembangan perangkat lunak desktop untuk berbagai platform.</p>
+                        </div>
+                    </div>
+                    <div class="study-card" style="background: linear-gradient(88deg, #2A84B7 0%, #57A17D 100%);">
+                        <img src="assets\sgmobile_logo.png" alt="Study Group Fundamental">
+                        <div class="study-card-text">
+                            <h4>Mobile Development</h4>
+                            <p>Divisi ini fokus dalam pengembangan aplikasi mobile untuk platform Android dengan bahasa Kotlin</p>
+                        </div>
+                    </div>
+                    <div class="study-card" style="background: linear-gradient(88deg, #2A84B7 0%, #B08756 100%);">
+                        <img src="assets\sgweb_logo.png" alt="Study Group Fundamental">
+                        <div class="study-card-text">
+                            <h4>Web Development</h4>
+                            <p>Divisi ini akan merambah dunia web mulai dari html hingga framework web modern</p>
+                        </div>
+                    </div>
+                    <div class="study-card" style="background: linear-gradient(88deg, #2A84B7 0%, #9B5858 100%);
+
+                    ">
+                        <img src="assets\sggame_logo.png" alt="Study Group Fundamental">
+                        <div class="study-card-text">
+                            <h4>Game Development</h4>
+                            <p>Divisi ini mengajak anggotanya untuk memahami seluk-beluk pembuatan permainan menggunakan unity engine.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card researchgroup">
+                    <h3><b>RESEARCH GROUP</b></h3>
+                    <p>
+                        Research Group SEA Laboratory adalah sebuah kelompok penelitian yang berfokus pada 
+                        pengembangan dan inovasi di bidang Software. Dipimpin oleh seorang dosen yang berkomitmen,
+                        laboratorium ini memusatkan perhatian pada berbagai aspek software engineering, termasuk
+                        analisis kebutuhan, desain, pengembangan, pengujian, dan pemeliharaan aplikasi.  
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="content section3" id="about">
+        <section>
+            <div class="section3-content">
+                <h2>ABOUT US</h2>
+                <p>
+                    <b>SEA Laboratory (Software Engineering and Application)</b> adalah laboratorium 
+                    prodi jurusan <br><b>S1 Teknik Komputer</b> yang berlokasi di <b>Telkom University Bandung</b>.
+                    <br><br>    
+                    Laboratorium ini juga menyediakan fasilitas dan dukungan bagi mahasiswa dan
+                    dosen yang ingin melakukan penelitian, pengembangan, dan pengajaran di
+                    bidang rekayasa perangkat lunak dan aplikasi.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <div class="content section4" id="assistants">
+        <section>
+            <div class="section4-content">
+                <h2>ASSISTANTS</h2>
+                <section class="executive-card">
+                    <div class="assistant-card">
+                        <img src="assets/assistants/Cetta_CMA.jpg" alt="CMA">
+                        <h3>Cetta Maulana Andhika</h3>
+                        <h4>Wakil Koordinator Asisten</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/faraday.bf/" target="_blank"><img src="assets/assistants/instagram_social.svg" alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="assets/assistants/linkedin_social.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                    <div class="assistant-card">
+                        <img src="assets/assistants/Bobe_ARA.jpg" alt="ARA">
+                        <h3>Faraday Barr Fatahillah</h3>
+                        <h4>Koordinator Asisten</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/faraday.bf/" target="_blank"><img src="assets/assistants/instagram_social.svg" alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="assets/assistants/linkedin_social.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                    <div class="assistant-card">
+                        <img src="assets/assistants/Aldo_DAO.jpg" alt="DAO">
+                        <h3>Aldo Nitehe Lase</h3>
+                        <h4>Koordinator Riset</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/faraday.bf/" target="_blank"><img src="assets/assistants/instagram_social.svg" alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="assets/assistants/linkedin_social.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="administration-card">
+                    <div class="assistant-card">
+                        <img src="assets/assistants/Kinanti Rahayu Az-Zahar_KRZ.jpg" alt="KRZ">
+                        <h3>Kinanti Rahayu Az-Zahra</h3>
+                        <h4>Sekretaris</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/faraday.bf/" target="_blank"><img src="assets/assistants/instagram_social.svg" alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="assets/assistants/linkedin_social.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                    <div class="assistant-card">
+                        <img src="assets/assistants/Sam_SAM.jpg" alt="SAM" style="object-position: 50% 50%;">
+                        <h3>Sam Alim Ramadhan</h3>
+                        <h4>Sekretaris</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/faraday.bf/" target="_blank"><img src="assets/assistants/instagram_social.svg" alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="assets/assistants/linkedin_social.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                    <div class="assistant-card">
+                        <img src="assets/assistants/AZMI_ATS.jpg" alt="ATS">
+                        <h3>Azmi Taqiuddin Syah</h3>
+                        <h4>Bendahara</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/faraday.bf/" target="_blank"><img src="assets/assistants/instagram_social.svg" alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="assets/assistants/linkedin_social.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="practicum-card">
+                    <div class="assistant-card">
+                        <img src="assets/assistants/Panji_YNA.jpg" alt="YNA">
+                        <h3>Panji Christoper Silalahi</h3>
+                        <h4>Praktikum</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/faraday.bf/" target="_blank"><img src="assets/assistants/instagram_social.svg" alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="assets/assistants/linkedin_social.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                    <div class="assistant-card">
+                        <img src="assets/assistants/yogas_YOG.jpg" alt="YOG">
+                        <h3>Yohannes Yogas Herlambang</h3>
+                        <h4>Praktikum</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/faraday.bf/" target="_blank"><img src="assets/assistants/instagram_social.svg" alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="assets/assistants/linkedin_social.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                    <div class="assistant-card">
+                        <img src="assets/assistants/Abyan_ARS.jpg" alt="ARS">
+                        <h3>Muh. Abyan Ridhan Siregar</h3>
+                        <h4>Praktikum</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/faraday.bf/" target="_blank"><img src="assets/assistants/instagram_social.svg" alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="assets/assistants/linkedin_social.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                    <div class="assistant-card">
+                        <img src="assets/assistants/Naja_SEF.jpg" alt="SEF" style="object-position: 50% 70%;">
+                        <h3>Sef Sofa Maulanaja</h3>
+                        <h4>Praktikum</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/faraday.bf/" target="_blank"><img src="assets/assistants/instagram_social.svg" alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="assets/assistants/linkedin_social.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="publicrelation-card">
+                    <div class="assistant-card">
+                        <img src="assets/assistants/Kinanti Aria_KIN.jpg" alt="KIN">
+                        <h3>Kinanti Aria Widaswara</h3>
+                        <h4>Public Relation</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/faraday.bf/" target="_blank"><img src="assets/assistants/instagram_social.svg" alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="assets/assistants/linkedin_social.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                    <div class="assistant-card">
+                        <img src="assets/assistants/Axel_AXL.jpg" alt="AXL" style="object-position: 50% 30%;">
+                        <h3>Axel David</h3>
+                        <h4>Public Relation</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/faraday.bf/" target="_blank"><img src="assets/assistants/instagram_social.svg" alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="assets/assistants/linkedin_social.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                    <div class="assistant-card">
+                        <img src="assets/assistants/Sulthan_SNA.jpg" alt="SNA" style="object-position: 50% 55%;">
+                        <h3>Sulthan Nauval Abdillah</h3>
+                        <h4>Public Relation</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/faraday.bf/" target="_blank"><img src="assets/assistants/instagram_social.svg" alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="assets/assistants/linkedin_social.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="logistics-card">
+                    <div class="assistant-card">
+                        <img src="assets/assistants/Farel_TAM.jpg" alt="TAM">
+                        <h3>Muh. Farrel Ahadi Tama</h3>
+                        <h4>Inventaris</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/faraday.bf/" target="_blank"><img src="assets/assistants/instagram_social.svg" alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="assets/assistants/linkedin_social.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                    <div class="assistant-card">
+                        <img src="assets/assistants/Andre_AND.jpg" alt="AXL" style="object-position: 50% 50%;">
+                        <h3>Andreas Wahyu Prayogo</h3>
+                        <h4>Inventaris</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/faraday.bf/" target="_blank"><img src="assets/assistants/instagram_social.svg" alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="assets/assistants/linkedin_social.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                    <div class="assistant-card">
+                        <img src="assets/assistants/Fadhil_FDZ.jpg" alt="FDZ" style="object-position: 50% 50%;">
+                        <h3>Fadhil Dzikri Aqila</h3>
+                        <h4>Inventaris</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/faraday.bf/" target="_blank"><img src="assets/assistants/instagram_social.svg" alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="assets/assistants/linkedin_social.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer">
+        
+        <div class="address">
+            <h2>ADDRESS</h2>
+            <p>
+                Gedung TULT 1405 Lantai 14,<br>
+                Jl. Telekomunikasi Terusan Buah Batu,<br>
+                Bandung 40257,<br>
+                Indonesia
+            </p>
+        </div>
+        <div class="social-media">
+            <h2>FOLLOW US</h2>
+            <div>
+                <a href="https://www.instagram.com/sea.laboratory/" target="_blank"><img src="assets\instagram_icon.png" alt="Instagram"></a>
+                <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=748waapd" target="_blank"><img src="assets\line_icon.png" alt="Line"></a>
+                <a href="https://www.youtube.com/@SEALaboratory" target="_blank"><img src="assets\youtube_icon.png" alt="Youtube"></a>
+            </div>
+        </div>
+    </div>
+    
+    </body>
+    </html>
+
 </body>
 </html>
