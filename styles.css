@@ -288,12 +288,12 @@ nav div {
 }
 
 .assistant-card img {
-    width: calc(10px + 15vw);
-    height: calc(10px + 15vw);
-    border-radius: 50%;
+    width: 14vw;
+    height: 14vw;
     object-fit: cover;
     object-position: 50% 30%;
     margin-bottom: calc(1vw + 1vh);
+    padding-top: 2vw;
 }
 
 .assistant-card {
