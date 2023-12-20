@@ -23,7 +23,6 @@ nav {
 
 nav img {
     height: 4vw;
-    max-height: 100px;
 }
 
 nav a {
@@ -80,9 +79,9 @@ nav div {
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 2vw;
+    gap: 3vw;
     padding-top: 2vw;
-    padding-bottom: 15vw;
+    padding-bottom: 10vw;
 }
 
 .button {
@@ -147,7 +146,7 @@ nav div {
     color: #fff;
     padding: 3vw;
     border-radius: 0.7vw;
-    margin: 2vw 3vw;
+    margin-bottom: calc(10vw + 10vh);
 }
 
 .card h3 {
