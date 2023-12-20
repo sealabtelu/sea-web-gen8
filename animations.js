@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    
     var aboutLink = document.querySelector('a[href="#about"]');
     aboutLink.addEventListener('click', function (event) {
         event.preventDefault();
