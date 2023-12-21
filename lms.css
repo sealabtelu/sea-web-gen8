@@ -10,11 +10,55 @@ body {
     background: url("assets/bg.png") center/cover;
 }
 
-.container {
+nav {
+    overflow: hidden;
+    background: transparent;
+    padding: 1.75vh 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 96vh; /* Adjust the height as needed */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+nav img {
+    height: 4vw;
+}
+
+nav a {
+    display: block;
+    color: #626262;
+    text-align: center;
+    padding: 1vw 1vw;
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-family: 'Cascadia Mono SemiBold', sans-serif;
+}
+
+nav a:hover {
+    background-color: rgba(67, 198, 240, 0.7);
+    color: rgb(255, 255, 255);
+    padding: 1vw 1vw;
+}
+
+nav div {
+    display: flex;
+    gap: 0.8vw;
+}
+
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
 }
 
 .logo {
@@ -25,7 +69,7 @@ body {
 }
 
 .logo img{
-    height: calc(5vw + 5vh);
+    height: calc(10vw + 10vh);
 }
 
 .login-form {
@@ -33,30 +77,38 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
-    height: 103.5vh;
+    align-items: center;
+    height: 100vh;
     width: 50vw; /* Adjust the width as needed */
     border-radius: 1.5vw;
     box-shadow: 0 0 10px rgba(105, 180, 241, 0.447); /* Adding a subtle box shadow */
 }
 
+.login-form form {
+    margin-top: 20px;
+}
+
 .login-form h1 {
-    font-size: clamp(2.8vw, 3vh, calc(3vw + 3vh));
+    font-size: clamp(calc(0.75vw + 0.75vh), calc(2vw + 2vh), calc(3vw + 3vh));
+    width: 40vw;
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Cascadia Mono Extrabold', sans-serif;
 }
 
-.login-form h4 {
+.login-form h2 {
+    font-size: clamp(calc(0.5vw + 0.5vh), calc(1vw + 1vh), calc(2vw + 2vh));
     margin-bottom: 10px;
     font-family: 'Poppins Light', 'sans-serif';
 }
 
 .login-form input {
-    border: 1px solid #d8d6de;
+    font-size: calc(0.7vw + 0.7vh);
+    border: 1px solid #d8d6de83;
     border-radius: .357rem;
     width: 30vw;
     height: 40px; /* Adjust the height as needed */
+    padding-left: 10px;
     margin-bottom: 10px;
 }
 
@@ -68,12 +120,42 @@ body {
     background: linear-gradient(91deg, #43C6F0 0.25%, #4388F0 100%);
     color: white;
     font-family: 'Poppins Extrabold', 'sans-serif';
+    width: 15vw;
+    height: 50px;
+    margin: 0 7.5vw;
+    margin-top: 20px;
+    font-size: calc(1vw + 1vh)
 }
-.login-form input,
-.login-form h4{
-    margin-left: 10vw;
+.login-form input[type=submit]:hover{
+    cursor: pointer;
 }
 
-form {
-    margin-top: 20px;
+@media screen and (orientation:portrait) {
+    .container{
+        flex-direction: column;
+        
+    }
+    .logo img{
+        margin-bottom: 5vh;
+    }
+    .login-form{
+        height: 40vh;
+        width: 80vw;
+        padding: 5vh 5vh 10vh 5vh;
+    }
+    .login-form h1{
+        width: 80vw;
+    }
+    .login-form input {
+        font-size: calc(0.7vw + 0.7vh);
+        border: 1px solid #d8d6de83;
+        border-radius: .357rem;
+        width: 60vw;
+        height: 40px; /* Adjust the height as needed */
+    }
+    .login-form input[type=submit] {
+        height: 40px;
+        width: 20vw;
+        margin: 0 22.5vw;
+    }
 }
