@@ -141,7 +141,7 @@ nav div {
     .login-form{
         height: 40vh;
         width: 80vw;
-        padding: 5vh 5vh 10vh 5vh;
+        padding: calc(5vh+5vw) 5vh 10vh 5vh;
     }
     .login-form h1{
         width: 80vw;
