@@ -2,52 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&italic&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
 
-body {
-    margin: 0;
-    font-family: 'Cascadia Mono', sans-serif;
+:root{
+    --light-color:#ffffff;
+    --theme-color:#43C6F0;
+    --dark-color: #333333;
 }
-
-nav {
-    overflow: hidden;
-    background: transparent;
-    padding: 1.75vh 5vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-}
-
-nav img {
-    height: 4vw;
-}
-
-nav a {
-    display: block;
-    color: #626262;
-    text-align: center;
-    padding: 1vw 1vw;
-    text-decoration: none;
-    font-size: 1.3vw;
-    font-family: 'Cascadia Mono SemiBold', sans-serif;
-}
-
-nav a:hover {
-    background-color: rgba(67, 198, 240, 0.7);
-    color: rgb(255, 255, 255);
-    padding: 1vw 1vw;
-}
-
-nav div {
-    display: flex;
-    gap: 0.8vw;
-}
-
-
-
 
 .content {
     display: flex;
@@ -55,7 +14,7 @@ nav div {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: #fff;
+    color: var(--light-color);
 }
 
 .section1 {
@@ -72,11 +31,11 @@ nav div {
 }
 
 .welcome {
-    color: #333333;
+    color: var(--dark-color);
 }
 
 .lab-text {
-    color: #43C6F0;
+    color: var(--theme-color);
 }
 
 .buttons {
@@ -96,9 +55,9 @@ nav div {
     padding: 0.5vw 2vw;
     font-size: calc(1.3vw + 1.3vh);
     text-decoration: none;
-    color: #fff;
-    background-color: #43C6F0;
-    border: 0.3vw solid #43C6F0;
+    color: var(--light-color);
+    background-color: var(--theme-color);
+    border: 0.3vw solid var(--theme-color);
     border-radius: 0.7vw;
     transition: background-color 0.3s, border-color 0.3s;
     font-family: 'Cascadia Mono ExtraBold', sans-serif;
@@ -110,13 +69,13 @@ nav div {
 }
 
 .content.section1 .buttons .button.explore {
-    background-color: #fff;
-    color: #43C6F0;
+    background-color: var(--light-color);
+    color: var(--theme-color);
 }
 
 .content.section1 .buttons .button.explore:hover {
     background-color: #3598b9;
-    color: #ffffff;
+    color: var(--light-color);
 }
 
 .content.section2 {
@@ -135,7 +94,7 @@ nav div {
 }
 
 .section2-content h2 {
-    color: #43C6F0;
+    color: var(--theme-color);
     display: inline-block;
     padding: 1vw;
     border-radius: 0.7vw;
@@ -145,8 +104,8 @@ nav div {
 }
 
 .card {
-    background-color: #43C6F0; 
-    color: #fff;
+    background-color: var(--theme-color); 
+    color: var(--light-color);
     padding: 3vw;
     border-radius: 0.7vw;
     margin-bottom: calc(10vw + 10vh);
@@ -166,7 +125,7 @@ nav div {
 }
 
 .study-card {
-    color: #fff;
+    color: var(--light-color);
     padding: 2vw;
     border-radius: 0.7vw;
     margin: 2vw 0;
@@ -210,7 +169,7 @@ nav div {
     font-size: calc(1vw + 1vh);
 }
 .section3 {
-    background: #43C6F0 url('assets/bg-section3.png') center/cover;
+    background: var(--theme-color) url('assets/bg-section3.png') center/cover;
 }
 
 .content.section3 {
@@ -229,8 +188,8 @@ nav div {
 }
 
 .section3-content h2 {
-    color: #43C6F0;
-    background-color: #ffffff;
+    color: var(--theme-color);
+    background-color: var(--light-color);
     display: inline-block;
     padding: 1vw;
     border-radius: 0.5vw;
@@ -239,7 +198,7 @@ nav div {
 }
 
 .section3-content p {
-    color: #ffffff;
+    color: var(--light-color);
     display: inline-block;
     padding: 0.5vw 4vw;
     border-radius: 2px;
@@ -250,7 +209,7 @@ nav div {
 
 
 .section4 {
-    background: #43C6F0;
+    background: var(--theme-color);
 }
 
 .content.section4 {
@@ -271,7 +230,7 @@ nav div {
 .section4-content h2
 
  {
-    color: #ffffff;
+    color: var(--light-color);
     display: inline-block;
     padding: 2vw;
     margin-bottom: 8vh;
@@ -299,7 +258,7 @@ nav div {
 }
 
 .assistant-card {
-    background: linear-gradient(133deg, #16B4E7 12.88%, #1C487C 95.68%);
+    background: linear-gradient(133deg, #16B4E7 12%, #1C487C 95%);
     box-shadow: 15px 14px 51.1px 0px #3284B0;
     width: 10vw;
     height: 25vw;
@@ -307,12 +266,12 @@ nav div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #43C6F0; 
-    color: #fff;
+    background-color: var(--theme-color); 
+    color: var(--light-color);
     padding: 1.5vw 6vw;
     padding-bottom: 5vh;
     border-radius: 1vw;
-    border: 0.3vw solid #FFF;
+    border: 0.3vw solid var(--light-color);
     margin-bottom: calc(8vw + 8vh);
     text-align: center;
     white-space: wrap; /* Allow text to wrap */
@@ -359,8 +318,8 @@ nav div {
 .footer {
     display: flex;
     justify-content: space-around;
-    background-color: #ffffff;
-    color: #43C6F0;
+    background-color: var(--light-color);
+    color: var(--theme-color);
     padding: 40px;
     font-size: calc(0.7vw + 0.7vh);
 }

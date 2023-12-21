@@ -45,3 +45,11 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+var togel=document.getElementById("togel");
+function showMenu(){
+    togel.style.right="0";
+}
+function hideMenu(){
+    togel.style.right="-160vw";
+}

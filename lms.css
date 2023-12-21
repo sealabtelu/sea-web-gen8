@@ -2,57 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&italic&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', Arial, sans-serif;
-    background: url("assets/bg.png") center/cover;
-}
-
-nav {
-    overflow: hidden;
-    background: transparent;
-    padding: 1.75vh 5vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-}
-
-nav img {
-    height: 4vw;
-}
-
-nav a {
-    display: block;
-    color: #626262;
-    text-align: center;
-    padding: 1vw 1vw;
-    text-decoration: none;
-    font-size: 1.3vw;
-    font-family: 'Cascadia Mono SemiBold', sans-serif;
-}
-
-nav a:hover {
-    background-color: rgba(67, 198, 240, 0.7);
-    color: rgb(255, 255, 255);
-    padding: 1vw 1vw;
-}
-
-nav div {
-    display: flex;
-    gap: 0.8vw;
-}
-
-
-
-
-
 
 .container {
     display: flex;
