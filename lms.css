@@ -3,6 +3,14 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
 
 
+:root{
+    --light-color:#e6f9ff;
+    --theme-color:#43C6F0;
+    --dark-color: #333333;
+    --transparent-color:#dbf7ff3f;
+}
+
+
 .container {
     display: flex;
     justify-content: center;
@@ -22,7 +30,7 @@
 }
 
 .login-form {
-    background-color: white;
+    background-color: var(--transparent-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,7 +61,7 @@
 
 .login-form input {
     font-size: calc(0.7vw + 0.7vh);
-    border: 1px solid #d8d6de83;
+    border: 1px solid var(--transparent-color);
     border-radius: .357rem;
     width: 30vw;
     height: 40px; /* Adjust the height as needed */
@@ -62,12 +70,12 @@
 }
 
 .login-form input:focus {
-    outline: 1px solid #43C6F0;
+    outline: 1px solid var(--theme-color);
 }
 
 .login-form input[type=submit] {
-    background: linear-gradient(91deg, #43C6F0 0.25%, #4388F0 100%);
-    color: white;
+    background: linear-gradient(91deg, var(--theme-color) 0.25%, #4388F0 100%);
+    color: var(--light-color);
     font-family: 'Poppins Extrabold', 'sans-serif';
     width: 15vw;
     height: 50px;
@@ -97,10 +105,6 @@
     }
     .login-form input {
         font-size: calc(0.7vw + 0.7vh);
-        border: 1px solid #d8d6de83;
-        border-radius: .357rem;
-        width: 60vw;
-        height: 40px; /* Adjust the height as needed */
     }
     .login-form input[type=submit] {
         height: 40px;

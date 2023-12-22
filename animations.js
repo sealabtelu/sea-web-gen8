@@ -51,5 +51,5 @@ function showMenu(){
     togel.style.right="0";
 }
 function hideMenu(){
-    togel.style.right="-160vw";
+    togel.style.right="-200vw";
 }

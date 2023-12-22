@@ -5,53 +5,51 @@ body {
 
 nav {
     overflow: visible;
-    background: transparent;
+    background: #dbf7ff3f;
     position: sticky;
     top: 0;
     z-index: 100;
 }
+
 nav section{
     padding: 1vh 5vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(10px);
 }
-
-nav img {
-    height: 4vw;
-}
-
 nav section .fa{
     display:none;
 }
-
-nav a {
+nav section img {
+    height: 4vw;
+}
+nav section .close{
+    display: none;
+}
+nav section a {
     display: block;
     color: #626262;
     text-align: center;
     padding: 1vw 1vw;
     text-decoration: none;
     border-radius: 50px;
-    font-size: 1.3vw;
+    font-size: calc(0.75vh + 1vw);
     font-family: 'Cascadia Mono SemiBold', sans-serif;
 }
-
-nav a:hover {
+nav section a:hover {
     background-color: rgba(67, 198, 240, 0.7);
     color: rgb(206, 249, 247);
     padding: 1vw 1vw;
     transition: 0.75s;
 }
-
-nav a.logo-nav:hover {
+nav section a.logo-nav:hover {
     background-color: rgba(67, 197, 240, 0.136);
     transition: 0.75s;
 }
-
-nav div {
+nav section div {
     display: flex;
     gap: 0.8vw;
 }
@@ -61,39 +59,44 @@ nav div {
         position:absolute;
         top:0;
         right:0vw;
-        width: 50vw;
-        padding-bottom: 100vh;
+        width: calc(40vh - 30vw);
+        height: 50vh;
+        padding-bottom: 100%;
         padding-top: 5vh;
         flex-direction: column;
         gap:5vh;
-        transition: 0.5s;
+        transition: 0.5s ease-in-out;
     }
-    nav img {
-        height: 10vh;
-    }
-    nav section .fa{
+    nav section .fa-bars{
         position: absolute;
         display: block;
         color:#827886;
         margin: 10px;
-        font-size: 22px;
+        font-size: calc(2vh + 2vw);
+        top:5vh;
+        right:202.5vw;
         cursor:pointer;
     }
-    nav section .fa-bars{
-        left:-110vw;
+    nav section img {
+        height: 10vh;
     }
-    nav section .fa-times{
-        left:-10vw;
+    nav section .close{
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        right:calc(37.5vh - 20vw);
     }
-    nav div{
+    nav section div{
         flex-direction: column;
         gap:5vh;
     }
-    nav a {
-        font-size: 5vh;
+    nav section a {
+        font-size: calc(2vh + 0.75vw);
         text-align: right;
     }
-    nav a:hover {
+    nav section a:hover {
         background-color: unset;
         color: #626262;
         padding: 1vw 1vw;

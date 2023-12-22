@@ -3,9 +3,10 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
 
 :root{
-    --light-color:#ffffff;
+    --light-color:#e6f9ff;
     --theme-color:#43C6F0;
     --dark-color: #333333;
+    --transparent-color:#dbf7ff3f;
 }
 
 .content {
@@ -18,7 +19,9 @@
 }
 
 .section1 {
-    background: url('assets/bg.png') center/cover;
+    background-image: linear-gradient(#dbf7ff3f,#dbf7ff3f),url('assets/bg.png');
+    background-position: center;
+    background-size: cover;
 }
 
 .welcome, .lab-text {
@@ -69,7 +72,7 @@
 }
 
 .content.section1 .buttons .button.explore {
-    background-color: var(--light-color);
+    background-color: #dbf7ff3f;
     color: var(--theme-color);
 }
 
