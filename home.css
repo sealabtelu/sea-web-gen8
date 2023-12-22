@@ -87,6 +87,7 @@
     justify-content: center;
     align-items: center;
     color: #0b0a0a;
+    background-color: #dbf7ff3f;
 }
 
 .section2-content {
@@ -188,6 +189,7 @@
     max-width: 90vw;
     margin: 0 auto;
     padding: 2vw;
+    background-color: #dbf7ff3f;
 }
 
 .section3-content h2 {
