@@ -16,6 +16,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh; /* Adjust the height as needed */
+    background-color: var(--transparent-color);
 }
 
 .logo {
@@ -64,7 +65,7 @@
     border: 1px solid var(--transparent-color);
     border-radius: .357rem;
     width: 30vw;
-    height: 40px; /* Adjust the height as needed */
+    height: 5vh; /* Adjust the height as needed */
     padding-left: 10px;
     margin-bottom: 10px;
 }
@@ -78,7 +79,7 @@
     color: var(--light-color);
     font-family: 'Poppins Extrabold', 'sans-serif';
     width: 15vw;
-    height: 50px;
+    height: 5vh;
     margin: 0 7.5vw;
     margin-top: 20px;
     font-size: calc(1vw + 1vh)
@@ -90,21 +91,22 @@
 @media screen and (orientation:portrait) {
     .container{
         flex-direction: column;
-        
     }
     .logo img{
+        height: calc(5vw + 5vh);
         margin-bottom: 5vh;
     }
     .login-form{
         height: 40vh;
         width: 80vw;
-        padding: calc(5vh + 5vw) 5vh 10vh 5vh;
+        padding: calc(5vh + 5vw) 5vh calc(10vh + 2.5vw) 5vh;
     }
     .login-form h1{
         width: 80vw;
     }
     .login-form input {
         font-size: calc(0.7vw + 0.7vh);
+        width: 60vw;
     }
     .login-form input[type=submit] {
         height: 40px;
