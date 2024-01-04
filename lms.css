@@ -7,7 +7,7 @@
     --light-color:#e6f9ff;
     --theme-color:#43C6F0;
     --dark-color: #333333;
-    --transparent-color:#dbf7ff3f;
+    --transparent-color:rgb(252, 254, 255);
 }
 
 
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 99vh; 
+    height: 97vh; 
     background-color: var(--transparent-color);
     background: url(assets/bg.png);
 }
