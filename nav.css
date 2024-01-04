@@ -43,11 +43,11 @@ nav section a:hover {
     background-color: rgba(67, 198, 240, 0.7);
     color: rgb(206, 249, 247);
     padding: 1vw 1vw;
-    transition: 0.75s;
+    transition: 0.25s;
 }
 nav section a.logo-nav:hover {
     background-color: rgba(67, 197, 240, 0.136);
-    transition: 0.75s;
+    transition: 0.25s;
 }
 nav section div {
     display: flex;
@@ -100,6 +100,6 @@ nav section div {
         background-color: unset;
         color: #626262;
         padding: 1vw 1vw;
-        transition: 0.75s;
+        transition: 0.25s;
     }
 }

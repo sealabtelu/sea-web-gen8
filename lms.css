@@ -15,15 +15,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust the height as needed */
+    height: 99vh; 
     background-color: var(--transparent-color);
+    background: url(assets/bg.png);
 }
 
 .logo {
     display: flex;
     justify-content:center;
     align-items: center;
-    width: 50vw; /* Adjust the width as needed */
+    width: 50vw; 
 }
 
 .logo img{
@@ -37,9 +38,9 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 50vw; /* Adjust the width as needed */
+    width: 50vw; 
     border-radius: 1.5vw;
-    box-shadow: 0 0 10px rgba(105, 180, 241, 0.447); /* Adding a subtle box shadow */
+    box-shadow: 0 0 10px rgba(105, 180, 241, 0.447); 
 }
 
 .login-form form {
@@ -82,7 +83,8 @@
     height: 5vh;
     margin: 0 7.5vw;
     margin-top: 20px;
-    font-size: calc(1vw + 1vh)
+    font-size: calc(1vw + 1vh);
+    justify-content: center;
 }
 .login-form input[type=submit]:hover{
     cursor: pointer;
