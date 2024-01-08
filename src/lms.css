@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&italic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&italic&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
 
 
 :root{
@@ -10,3 +11,193 @@
     --transparent-color:rgb(252, 254, 255);
 }
 
+/* Login Page */
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh; 
+    background: url(assets/bg.png);
+}
+
+.logo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 50vw; 
+}
+
+.logo img{
+    height: calc(10vw + 10vh);
+}
+
+.login-form {
+    background-color: var(--transparent-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50vw; 
+    border-radius: 1.5vw;
+    box-shadow: 0 0 10px rgba(105, 180, 241, 0.447); 
+}
+
+.login-form form {
+    margin-top: 20px;
+}
+
+.login-form h1 {
+    font-size: clamp(calc(0.75vw + 0.75vh), calc(2vw + 2vh), calc(3vw + 3vh));
+    width: 40vw;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Cascadia Mono Extrabold', sans-serif;
+}
+
+.login-form h2 {
+    font-size: clamp(calc(0.5vw + 0.5vh), calc(1vw + 1vh), calc(2vw + 2vh));
+    margin-bottom: 10px;
+    font-family: 'Poppins Light', 'sans-serif';
+}
+
+.login-form input {
+    font-size: calc(0.7vw + 0.7vh);
+    border: 1px solid var(--transparent-color);
+    background-color: #82b4ff44;
+    border-radius: .357rem;
+    width: 30vw;
+    height: 7.5vh; /* Adjust the height as needed */
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.login-form input:focus {
+    outline: 1px solid var(--theme-color);
+}
+
+.login-form input[type=submit] {
+    background: linear-gradient(91deg, var(--theme-color) 0.25%, #4388F0 100%);
+    color: var(--light-color);
+    font-family: 'Poppins Extrabold', 'sans-serif';
+    width: 15vw;
+    height: 7.5vh;
+    margin: 0 7.5vw;
+    margin-top: 20px;
+    font-size: calc(1vw + 1vh);
+    justify-content: center;
+}
+.login-form input[type=submit]:hover{
+    cursor: pointer;
+}
+
+
+/* LMS Page */
+main{
+    position: relative;
+    top: 0;
+    left: 9vw;
+    --width-main:74vw;
+    width: var(--width-main);
+    padding: 7.5vh 7.5vw;
+}
+.lms-title{
+    display: flex;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.display-akun{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5vw;
+}
+.display-akun img{
+    max-height: 10vh;
+}
+.content{
+    position: relative;
+    border-color: var(--theme-color);
+    border-radius: 10px;
+    border-style: groove;
+    padding: 2vh 2vw;
+    min-height: 50vh;
+}
+.content button{
+    border-radius: 2px;
+    border-color: var(--theme-color);
+    background-color: var(--light-color);
+    padding: 1vh 1vw;
+}
+.dropdown{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    margin-top: 1vh;
+    padding: 2vh 1vw;
+    border: 1px solid var(--theme-color) ;
+    width: 80%;
+    font-size: 75%;
+    z-index: 1;
+    word-wrap: break-word;
+}
+.dropdown a{
+    margin: 1vh 0;
+}
+.close-dropdown{
+    display: none;
+    border-radius: 10px;
+    position: absolute;
+    top:-15vh;
+    left: -5vh;
+    height: 60vh;
+    width: calc(var(--width-main) - 10vw);
+    z-index: 0;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    min-height: 40vh;
+}
+.items img{
+    width: calc(10vw + 5vh);
+}
+
+
+
+@media screen and (orientation:portrait) {
+    .container-login{
+        flex-direction: column;
+    }
+    .logo img{
+        height: calc(5vw + 5vh);
+        margin-bottom: 5vh;
+    }
+    .login-form{
+        height: 40vh;
+        width: 80vw;
+        padding: calc(5vh + 5vw) 5vh calc(10vh + 2.5vw) 5vh;
+    }
+    .login-form h1{
+        width: 80vw;
+    }
+    .login-form input {
+        font-size: calc(0.7vw + 0.7vh);
+        width: 60vw;
+        height: 5vh;
+    }
+    .login-form input[type=submit] {
+        height: 40px;
+        width: 20vw;
+        margin: 0 22.5vw;
+    }
+    main{
+        left: 0;
+        width: 85vw;
+    }
+}
