@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    cursor: default;
     font-family: 'Cascadia Mono', sans-serif;
 }
 
@@ -76,31 +77,10 @@ nav section a {
     font-size: calc(2vh + 0.75vw);
     text-align: center;
 }
-.whitelogo{
-    background-color: var(--theme-color);
-}
-.blacklogo{
-    background-color: var(--light-color);
-}
 nav section div a img{
     border-radius: 10px;
 }
-nav section a:hover {
-    background-color: rgba(67, 198, 240, 0.7);
-    color: rgb(206, 249, 247);
-    padding: 1vw 1vw;
-    transition: 0.25s;
-}
-nav section a:hover {
-    background-color: unset;
-    color: #626262;
-    padding: 1vw 1vw;
-    transition: 0.25s;
-}
-nav section a.logo-nav:hover {
-    background-color: rgba(67, 197, 240, 0.136);
-    transition: 0.25s;
-}
+
 @media screen and (orientation:portrait) {
     nav{
         background-color: black;
