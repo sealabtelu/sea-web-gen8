@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&italic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&italic&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
 
 :root{
     --light-color:#e6f9ff;

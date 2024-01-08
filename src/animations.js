@@ -45,6 +45,26 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+var dropdown=document.getElementById("dropdown-timeline1");
+var dropclose=document.getElementById("dropdown-close1");
+function showdropdown1(){
+    dropdown.style.display="flex";
+    dropclose.style.display="block";
+}
+function hidedropdown1(){
+    dropdown.style.display="none";
+    dropclose.style.display="none";
+}
+var dropdown2=document.getElementById("dropdown-timeline2");
+var dropclose2=document.getElementById("dropdown-close2");
+function showdropdown2(){
+    dropdown2.style.display="flex";
+    dropclose2.style.display="block";
+}
+function hidedropdown2(){
+    dropdown2.style.display="none";
+    dropclose2.style.display="none";
+}
 
 var togel=document.getElementById("togel");
 function showMenu(){
@@ -53,3 +73,13 @@ function showMenu(){
 function hideMenu(){
     togel.style.right="-200vw";
 }
+var togil=document.getElementById("togil");
+function showMenu2(){
+    togil.style.left="0";
+}
+function hideMenu2(){
+    togil.style.left="-200vw";
+}
+
+
+
