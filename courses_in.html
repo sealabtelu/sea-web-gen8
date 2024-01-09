@@ -17,32 +17,69 @@
             <a href="score.html"><img src="src/assets/lms_medali_vector.png"></a>
             <a href="courses.html"><img src="src/assets/lms_NoteBoard_vector_click.png"></a>
         </div>
+        </section>
     </nav>
     <main>
         <div class="lms-title">
             <h1><a href="courses.html"><i class="fa fa-arrow-left"></i></a> My Courses</h1>
         </div>
         <div class="content">
-            <button onclick="showdropdown2()" style="display: none;">Sort by date</button>
-            <div class="close-dropdown" onclick="hidedropdown2()" id="dropdown-close2" style="display: none;"></div>
-            <button onclick="showdropdown1()" style="display: none;">Next 7 days</button>
-            <div class="close-dropdown" onclick="hidedropdown1()" id="dropdown-close1" style="display: none;"></div>
             <h2>Modul 1 - Struktur Data</h2>
             <p>struktur data dalam bahasa pemrograman C merangkum konsep dasar seperti array, pointer, dan struktur, 
                 serta membahas struktur data dinamis seperti linked list, queue, stack, dan tree. 
                 Modul ini mencakup operasi-operasi dasar seperti pencarian, penyisipan, dan penghapusan, sambil 
                 menekankan penggunaan pointer dan alokasi memori dinamis.</p>
-            <div class="course-task">
-                <h2><i class="fa fa-arrow-right"></i> Tugas Pendahuluan</h2>
+            <div class="course-container">
+                <div class="course-task" onclick="showcontent(this)">
+                    <h2><i class="fa fa-arrow-right"></i> Tugas Pendahuluan</h2>
+                </div>
+                <div class="close" onclick="hidecontent(this)" id="close"></div>
+                <div class="course-task-content" id="course-task-content">
+                    <div style="display: flex; align-items: center;">
+                        <h3 style="margin: 0;padding: 0 2vw;">Batas Pengumpulan </h3>
+                        <p>|  32 Desember 2090</p>
+                    </div>
+                    <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
+                </div>
             </div>
-            <div class="course-task">
-                <h2><i class="fa fa-arrow-right"></i> Tes Awal</h2>
+            <div class="course-container">
+                <div class="course-task" onclick="showcontent(this)">
+                    <h2><i class="fa fa-arrow-right"></i> Tes Awal</h2>
+                </div>
+                <div class="close" onclick="hidecontent(this)" id="close"></div>
+                <div class="course-task-content" id="course-task-content">
+                    <div style="display: flex; align-items: center;">
+                        <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan</h3>
+                        <p>|  15 menit</p>
+                    </div>
+                    <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
+                </div>
             </div>
-            <div class="course-task">
-                <h2><i class="fa fa-arrow-right"></i> Jurnal</h2>
+            <div class="course-container">
+                <div class="course-task" onclick="showcontent(this)">
+                    <h2><i class="fa fa-arrow-right"></i> Jurnal</h2>
+                </div>
+                <div class="close" onclick="hidecontent(this)" id="close"></div>
+                <div class="course-task-content" id="course-task-content">
+                    <div style="display: flex; align-items: center;">
+                        <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan</h3>
+                        <p>|  45 menit</p>
+                    </div>
+                    <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
+                </div>
             </div>
-            <div class="course-task">
-                <h2><i class="fa fa-arrow-right"></i> Tugas Akhir</h2>
+            <div class="course-container">
+                <div class="course-task" onclick="showcontent(this)">
+                    <h2><i class="fa fa-arrow-right"></i> Tugas Akhir</h2>
+                </div>
+                <div class="close" onclick="hidecontent(this)" id="close"></div>
+                <div class="course-task-content" id="course-task-content">
+                    <div style="display: flex; align-items: center;">
+                        <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan </h3>
+                        <p>|  35 menit</p>
+                    </div>
+                    <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
+                </div>
             </div>
         </div>
     </main>

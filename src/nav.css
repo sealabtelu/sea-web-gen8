@@ -2,7 +2,7 @@ body {
     margin: 0;
     cursor: default;
     font-family: 'Cascadia Mono', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 nav {
