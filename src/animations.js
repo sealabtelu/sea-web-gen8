@@ -45,40 +45,57 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-var dropdown=document.getElementById("dropdown-timeline1");
-var dropclose=document.getElementById("dropdown-close1");
-function showdropdown1(){
-    dropdown.style.display="flex";
-    dropclose.style.display="block";
+
+// Landing
+function showMenu(element) {
+    var togel=element.parentNode.parentNode.querySelector("#togel");
+    if (togel) {
+        togel.style.right="0";
+    }
 }
-function hidedropdown1(){
-    dropdown.style.display="none";
-    dropclose.style.display="none";
-}
-var dropdown2=document.getElementById("dropdown-timeline2");
-var dropclose2=document.getElementById("dropdown-close2");
-function showdropdown2(){
-    dropdown2.style.display="flex";
-    dropclose2.style.display="block";
-}
-function hidedropdown2(){
-    dropdown2.style.display="none";
-    dropclose2.style.display="none";
+function hideMenu(element) {
+    var togel=element.parentNode.parentNode.querySelector("#togel");
+    if (togel) {
+        togel.style.right="-200vw";
+    }
 }
 
-var togel=document.getElementById("togel");
-function showMenu(){
-    togel.style.right="0";
+// LMS
+function showcontent(element) {
+    var coursetaskcontent = element.parentNode.querySelector("#course-task-content");
+    var close = element.parentNode.querySelector("#close");
+    if (coursetaskcontent) {
+        coursetaskcontent.style.height = '10vh';
+        close.style.display = 'block';
+    }
 }
-function hideMenu(){
-    togel.style.right="-200vw";
+function hidecontent(element) {
+    var coursetaskcontent = element.parentNode.querySelector("#course-task-content");
+    var close = element.parentNode.querySelector("#close");
+    if (coursetaskcontent) {
+        coursetaskcontent.style.height = '0vh';
+        close.style.display = 'none';
+    }
 }
-var togil=document.getElementById("togil");
-function showMenu2(){
-    togil.style.left="0";
+function showdropdown(element) {
+    var dropdown=element.parentNode.querySelector("#dropdown-timeline");
+    var dropclose=element.parentNode.querySelector("#dropdown-close");
+    if (dropdown) {
+        dropdown.style.display="flex";
+    }
+    if (dropclose) {
+        dropclose.style.display="block";
+    }
 }
-function hideMenu2(){
-    togil.style.left="-200vw";
+function hidedropdown(element) {
+    var dropdown=element.parentNode.querySelector("#dropdown-timeline");
+    var dropclose=element.parentNode.querySelector("#dropdown-close");
+    if (dropdown) {
+        dropdown.style.display="none";
+    }
+    if (dropclose) {
+        dropclose.style.display="none";
+    }
 }
 
 

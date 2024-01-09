@@ -2,6 +2,7 @@ body {
     margin: 0;
     cursor: default;
     font-family: 'Cascadia Mono', sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -97,7 +98,7 @@ nav section div a img:hover{
         
         flex-direction: row;
         height: unset;
-        width: 100vw;
+        width: 95vw;
         padding: 1vh 2.5vw;
         gap:3vw;
     }
@@ -111,10 +112,8 @@ nav section div a img:hover{
         max-width: 9vw;
         padding: unset;
     }
-    .logo-nav img{
-        visibility:hidden;
-        cursor: not-allowed !important;
-        pointer-events: none;
+    .logo-nav{
+        display: none;
     }
 }
 

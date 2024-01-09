@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEA Laboratory LMS</title>
+    <link rel="icon" href="src/assets/logo-web.png">
+    <link rel="stylesheet" href="src/lms.css">
+    <link rel="stylesheet" href="src/nav-lms.css">
+</head>
+<body>
+    <nav class="navbar">
+        <section id="togel">
+        <a href="index.html" class="logo-nav"><img src="src/assets/SEA-logo.png" alt="Logo"></a>
+        <div>
+            <a href="lms.html"><img src="src/assets/lms_rumah_vector.png"></a>
+            <a href="score.html"><img src="src/assets/lms_medali_vector.png"></a>
+            <a href="courses.html"><img src="src/assets/lms_NoteBoard_vector_click.png"></a>
+        </div>
+        </section>
+    </nav>
+    <main>
+        <div class="lms-title">
+            <h1><a href="courses.html"><i class="fa fa-arrow-left"></i></a> My Courses</h1>
+        </div>
+        <div class="content">
+            <h2>Modul 1 - Struktur Data</h2>
+            <p>struktur data dalam bahasa pemrograman C merangkum konsep dasar seperti array, pointer, dan struktur, 
+                serta membahas struktur data dinamis seperti linked list, queue, stack, dan tree. 
+                Modul ini mencakup operasi-operasi dasar seperti pencarian, penyisipan, dan penghapusan, sambil 
+                menekankan penggunaan pointer dan alokasi memori dinamis.</p>
+            <div class="course-container">
+                <div class="course-task" onclick="showcontent(this)">
+                    <h2><i class="fa fa-arrow-right"></i> Tugas Pendahuluan</h2>
+                </div>
+                <div class="close" onclick="hidecontent(this)" id="close"></div>
+                <div class="course-task-content" id="course-task-content">
+                    <div style="display: flex; align-items: center;">
+                        <h3 style="margin: 0;padding: 0 2vw;">Batas Pengumpulan </h3>
+                        <p>|  32 Desember 2090</p>
+                    </div>
+                    <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
+                </div>
+            </div>
+            <div class="course-container">
+                <div class="course-task" onclick="showcontent(this)">
+                    <h2><i class="fa fa-arrow-right"></i> Tes Awal</h2>
+                </div>
+                <div class="close" onclick="hidecontent(this)" id="close"></div>
+                <div class="course-task-content" id="course-task-content">
+                    <div style="display: flex; align-items: center;">
+                        <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan</h3>
+                        <p>|  15 menit</p>
+                    </div>
+                    <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
+                </div>
+            </div>
+            <div class="course-container">
+                <div class="course-task" onclick="showcontent(this)">
+                    <h2><i class="fa fa-arrow-right"></i> Jurnal</h2>
+                </div>
+                <div class="close" onclick="hidecontent(this)" id="close"></div>
+                <div class="course-task-content" id="course-task-content">
+                    <div style="display: flex; align-items: center;">
+                        <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan</h3>
+                        <p>|  45 menit</p>
+                    </div>
+                    <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
+                </div>
+            </div>
+            <div class="course-container">
+                <div class="course-task" onclick="showcontent(this)">
+                    <h2><i class="fa fa-arrow-right"></i> Tugas Akhir</h2>
+                </div>
+                <div class="close" onclick="hidecontent(this)" id="close"></div>
+                <div class="course-task-content" id="course-task-content">
+                    <div style="display: flex; align-items: center;">
+                        <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan </h3>
+                        <p>|  35 menit</p>
+                    </div>
+                    <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="src/animations.js"></script>
+</body>
+</html>
