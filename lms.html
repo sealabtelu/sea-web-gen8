@@ -11,6 +11,7 @@
 <body>
     <nav class="navbar">
         <section id="togel">
+        <a href="index.html" class="logo-nav"><img src="src/assets/SEA-logo.png" alt="Logo" class="logo-nav"></a>
         <div>
             <a href="lms.html"><img src="src/assets/lms_rumah_vector_click.png"></a>
             <a href="score.html"><img src="src/assets/lms_medali_vector.png"></a>
@@ -27,6 +28,9 @@
             <h2>Timeline</h2>
             <div style="display: flex;gap: 2vw;position: relative;">
                 <div style="flex-direction: column;position: relative;">
+                    <button onclick="showdropdown(this)">Next 7 days</button>
+                    <div class="close-dropdown" onclick="hidedropdown(this)" id="dropdown-close"></div>
+                    <div class="dropdown" id="dropdown-timeline">
                         <a href="">Next 7 days</a>
                         <a href="">blablublo??</a>
                         <a href="">blablublo??</a>
@@ -34,6 +38,9 @@
                     </div>
                 </div>
                 <div style="flex-direction: column;position: relative;">
+                    <button onclick="showdropdown(this)">Sort by date</button>
+                    <div class="close-dropdown" onclick="hidedropdown(this)" id="dropdown-close"></div>
+                    <div class="dropdown" id="dropdown-timeline">
                         <a href="">Sort by date</a>
                         <a href="">blablublo??</a>
                         <a href="">blablublo??</a>
@@ -43,7 +50,34 @@
             </div>
             <hr>
             <div class="items">
-
+                <div class="course-container timeline-container">
+                    <p>Sunday, 7th January</p>
+                    <div class="course-task timeline-task">
+                        <h2>Modul 1 - Tugas Pendahuluan</h2>
+                        <p>23:59</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="course-container timeline-container">
+                    <p>Sunday, 8th January</p>
+                    <div class="course-task timeline-task">
+                        <h2>Modul 1 - Tugas Awal</h2>
+                        <p>07:30</p>
+                    </div>
+                    <div class="course-task timeline-task">
+                        <h2>Modul 1 - Jurnal</h2>
+                        <p>08:15</p>
+                    </div>
+                    <div class="course-task timeline-task">
+                        <h2>Modul 1 - Tugas Akhir</h2>
+                        <p>09:15</p>
+                    </div>
+                </div>
+                <div class="course-container timeline-container">
+                    <div class="course-task timeline-task" style="justify-content: space-evenly;">
+                        <h1>OR</h1>
+                    </div>
+                </div>
                 <img src="src/assets/NoActivities_vector.png">
             </div>
         </div>
