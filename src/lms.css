@@ -104,7 +104,7 @@ hr {
     color: var(--theme-color);
     padding-left: 1vw;
 }
-.timeline-task p,h2{
+.timeline-task p, .timeline-task h2{
     color: black;
 }
 .items img{
@@ -151,7 +151,7 @@ hr {
     flex-direction: column;
     gap:0.1vh;
 }
-.item-title h2,h3,h4{
+.item-title h2, .item-title h3, .item-title h4{
     margin: 0;
 }
 .item-title h4{
@@ -180,7 +180,7 @@ hr {
     box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.25);
     color: var(--theme-color);
 }
-.course-task h2,p{
+.course-task h2, .course-task p{
     margin: 0;
     font-size: 100%;
 }
