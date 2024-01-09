@@ -30,11 +30,12 @@ nav section {
     left:0;
     height: 40vh;
     padding-bottom: 60vh;
-    padding-top: 5vh;
+    padding-top: 8vh;
     flex-direction: column;
-    gap:3vh;
+    gap:17vh;
     transition: 0.5s ease-in-out;
-    box-shadow: -3px 5px 34.5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: -1px 4px 47.3px -4px rgba(67, 147, 240, 0.16);
+    border-radius: 0 10px 10px 0;
 }
 nav section div{
     display: flex;
@@ -55,7 +56,7 @@ nav section .fa-bars{
     cursor:pointer;
 }
 nav section img {
-    width: 5vw;
+    width: 7vw;
 }
 nav section .close{
     display: block;
@@ -78,31 +79,42 @@ nav section a {
     text-align: center;
 }
 nav section div a img{
+    width: 4vw;
     border-radius: 10px;
 }
-
+nav section div a img:hover{
+    background-color: rgba(145, 145, 145, 0.5);
+}
 @media screen and (orientation:portrait) {
     nav{
         background-color: black;
     }
     nav section{
+        justify-content: center;
         position: fixed;
         top:unset;
         bottom:0;
+        
         flex-direction: row;
         height: unset;
-        max-width: 100vw;
+        width: 100vw;
         padding: 1vh 2.5vw;
         gap:3vw;
     }
     nav section div{
         flex-direction: row;
-        gap:3vw;
+        gap:5vw;
     }
-    nav section img{
+    nav section div a img{
         height: unset;
-        width: 17.5vw;
+        width: 8vw;
+        max-width: 9vw;
         padding: unset;
+    }
+    .logo-nav img{
+        visibility:hidden;
+        cursor: not-allowed !important;
+        pointer-events: none;
     }
 }
 

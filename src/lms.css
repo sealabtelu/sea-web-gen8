@@ -8,7 +8,9 @@
     --light-color:#e6f9ff;
     --theme-color:#43C6F0;
     --dark-color: #333333;
-    --transparent-color:rgb(252, 254, 255);
+    --transparent-color:rgba(252, 254, 255, 0.806);
+    --btnborder-color: #24A9E1;
+    --bordercard-color: rgba(36, 169, 225, 0.24);
 }
 
 main{
@@ -17,13 +19,16 @@ main{
     left: 9vw;
     --width-main:74vw;
     width: var(--width-main);
-    padding: 7.5vh 7.5vw;
+    padding: 10vh 7.5vw;
+    font-family: 'Poppins';
+    font-style: normal;
 }
 .lms-title{
     display: flex;
     height: 15vh;
     justify-content: space-between;
     align-items: center;
+    font-weight: 700;
 }
 .display-akun{
     display: flex;
@@ -31,23 +36,27 @@ main{
     justify-content: space-between;
     align-items: center;
     gap: 2.5vw;
+    text-decoration: none;
+    font-weight: 200;
 }
 .display-akun img{
-    max-height: 10vh;
+    max-height: 7vh;
 }
 .content{
     position: relative;
-    border-color: var(--theme-color);
-    border-radius: 10px;
-    border-style: groove;
+    border: 2px solid var(--bordercard-color);
+    border-radius: 1.5rem;
     padding: 2vh 2vw;
     min-height: 50vh;
 }
 .content button{
-    border-radius: 2vh;
-    border-color: var(--theme-color);
-    background-color: var(--light-color);
-    padding: 1vh 1vw;
+    border-radius: 1.1vh;
+    border: 1px solid var(--btnborder-color);
+    background-color: var(--transparent-color);
+    padding: 1.4vh 1vw;
+    color: var(--btnborder-color);
+    font-weight: 200;
+    font-size: 75%;
 }
 .content button:hover{
     cursor: pointer;
@@ -87,6 +96,10 @@ main{
 }
 .items img{
     width: calc(10vw + 5vh);
+}
+hr {
+    margin-top: 2vw;
+    border: 0.1px solid var(--bordercard-color)
 }
 
 @media screen and (orientation:portrait) {
