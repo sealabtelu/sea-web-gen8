@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    cursor: default;
+    font-family: 'Cascadia Mono', sans-serif;
+    overflow-x: hidden;
+}
+
+
+:root{
+    --light-color:#e6f9ff;
+    --theme-color:#43C6F0;
+    --dark-color: #333333;
+    --transparent-color:#dbf7ff3f;
+}
+
+nav {
+    overflow: visible;
+    background: #dbf7ff3f;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(10px);
+    position:absolute;
+    top:0;
+    left:0;
+    height: 40vh;
+    padding-bottom: 60vh;
+    padding-top: 8vh;
+    flex-direction: column;
+    gap:17vh;
+    transition: 0.5s ease-in-out;
+    box-shadow: -1px 4px 47.3px -4px rgba(67, 147, 240, 0.16);
+    border-radius: 0 10px 10px 0;
+}
+nav section div{
+    display: flex;
+    flex-direction: column;
+    gap:2vh;
+}
+nav section .fa{
+    display:none;
+}
+nav section .fa-bars{
+    position: absolute;
+    display: block;
+    color:#827886;
+    margin: 10px;
+    font-size: calc(2vh + 2vw);
+    top:5vh;
+    right:202.5vw;
+    cursor:pointer;
+}
+nav section img {
+    width: 7vw;
+}
+nav section .close{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left:calc(50vh - 20vw);
+}
+nav section a {
+    display: block;
+    color: #626262;
+    text-align: center;
+    padding: 1vw 2vw;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: calc(0.75vh + 1vw);
+    font-family: 'Cascadia Mono SemiBold', sans-serif;
+    font-size: calc(2vh + 0.75vw);
+    text-align: center;
+}
+nav section div a img{
+    width: 4vw;
+    border-radius: 10px;
+}
+nav section div a img:hover{
+    background-color: rgba(145, 145, 145, 0.5);
+}
+@media screen and (orientation:portrait) {
+    nav{
+        background-color: black;
+    }
+    nav section{
+        justify-content: center;
+        position: fixed;
+        top:unset;
+        bottom:0;
+        
+        flex-direction: row;
+        height: unset;
+        width: 95vw;
+        padding: 1vh 2.5vw;
+        gap:3vw;
+    }
+    nav section div{
+        flex-direction: row;
+        gap:5vw;
+    }
+    nav section div a img{
+        height: unset;
+        width: 8vw;
+        max-width: 9vw;
+        padding: unset;
+    }
+    .logo-nav{
+        display: none;
+    }
+}
+
