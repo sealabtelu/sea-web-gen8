@@ -21,7 +21,7 @@ main{
     left: 9vw;
     --width-main:74vw;
     width: var(--width-main);
-    padding: 10vh 7.5vw;
+    padding: 5.5vh 7.5vw;
     font-family: 'Poppins';
     font-style: normal;
 }
@@ -106,7 +106,7 @@ hr {
     padding-left: 1vw;
     font-weight: 700;
 }
-.timeline-task h2{
+.timeline-task {
     font-weight: 500;
 }
 .timeline-task p, .timeline-task h2{
