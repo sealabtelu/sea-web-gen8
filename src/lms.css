@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&italic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&italic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&italic&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
@@ -20,16 +21,23 @@ main{
     left: 9vw;
     --width-main:74vw;
     width: var(--width-main);
-    padding: 10vh 7.5vw;
+    padding: 4vh 7.5vw;
     font-family: 'Poppins';
     font-style: normal;
 }
 .lms-title{
     display: flex;
-    height: 15vh;
+    /* height: 15vh; */
     justify-content: space-between;
     align-items: center;
     font-weight: 700;
+}
+.lms-title h1 {
+    font-size: 2.5vw;
+}
+.lms-title a{
+    font-size: 1.3vw;
+    color: black;
 }
 .display-akun{
     display: flex;
@@ -46,9 +54,12 @@ main{
 .content{
     position: relative;
     border: 2px solid var(--bordercard-color);
-    border-radius: 1.5rem;
+    border-radius: 10px;
     padding: 2vh 2vw;
     min-height: 50vh;
+}
+.content h2{
+    font-size: 1.5vw;
 }
 .content button{
     border-radius: 1.1vh;
@@ -100,12 +111,20 @@ hr {
     align-items: center;
     min-height: 40vh;
 }
+.timeline-container a{
+    text-decoration: none;
+}
 .timeline-container p{
     color: var(--theme-color);
     padding-left: 1vw;
+    font-weight: 700;
+}
+.timeline-task:hover{
+    cursor: pointer;
 }
 .timeline-task p, .timeline-task h2{
     color: black;
+    font-weight: 500;
 }
 .items img{
     width: calc(10vw + 5vh);
@@ -126,30 +145,30 @@ hr {
     display: grid;
     grid-template-columns:auto auto auto;
     height: 50vh;
-    width: 96%;
-    gap: 3vh 2vw;
-    padding: 2vh 2vw;
+    width: 104%;
+    gap: 3vh 3vw;
+    padding: 2vh 0vw;
 }
 .item-grid{
     position: relative;
     height: 100%;
-    width: 90%;
+    width: 86%;
     background-color: var(--theme-color);
-    border-radius: 20px;
+    border-radius: 8px;
     box-shadow: -3px 5px 34.5px -10px rgba(0, 0, 0, 0.25);
 }
 .item-title{
     position: absolute;
     height: 40%;
-    width: 90%;
+    width: 80%;
     padding: 5% 10%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     bottom: 0;
     background-color: white;
     display: flex;
     flex-direction: column;
-    gap:0.1vh;
+    gap:0vh;
 }
 .item-title h2, .item-title h3, .item-title h4{
     margin: 0;
@@ -158,13 +177,15 @@ hr {
     color: var(--theme-color);
 }
 .item-title h2{
-    font-size: 100%;
+    font-size: 2.5vh;
+    color : black;
 }
 .item-title h3{
-    font-size: 80%;
+    font-size: 2vh;
+    color : black;
 }
 .item-title h4{
-    font-size: 60%;
+    font-size: 1.5vh;
 }
 .course-container{
     position: relative;
@@ -176,7 +197,7 @@ hr {
     align-items: center;
     margin: 2vh 0;
     padding: 2vh 2vw;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.25);
     color: var(--theme-color);
 }
@@ -186,9 +207,6 @@ hr {
 }
 .course-task:hover{
     cursor: pointer;
-}
-.timeline-task:hover{
-    cursor: default;
 }
 .course-task-content{
     display: flex;
@@ -214,9 +232,31 @@ hr {
     main{
         left: 0;
         width: 85vw;
+        padding-top: 5vh;
+    }
+    .lms-title h1{
+        font-size: 7vw;
+    }
+    .lms-title h2{
+        font-size: 5vw;
+    }
+    .content{
+        padding: 2vh 4vw;
     }
     .tabel-nilai{
-        font-size: 3vw;
+        font-size: 2.33vw;
     }
-
+    .items-course{
+        grid-template-columns:auto auto;
+        height: 50vh;
+    }
+    .item-title h2{
+        font-size: 2.5vw;
+    }
+    .item-title h3{
+        font-size: 2vw;
+    }
+    .item-title h4{
+        font-size: 1.5vw;
+    }
 }

@@ -20,7 +20,7 @@ body{
     height: 100vh; 
     width: 100vw;
     background-color: var(--transparent-color);
-    background: url(src/assets/bg.png);
+    background: url('assets/bg.png');
 }
 
 .logo {
@@ -31,7 +31,7 @@ body{
 }
 
 .logo img{
-    height: calc(10vw + 10vh);
+    height: calc(8vw + 8vh);
 }
 
 .login-form {

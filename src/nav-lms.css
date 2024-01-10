@@ -57,7 +57,7 @@ nav section .fa-bars{
     cursor:pointer;
 }
 nav section img {
-    width: 7vw;
+    width: 5.5vw;
 }
 nav section .close{
     display: block;
@@ -86,6 +86,9 @@ nav section div a img{
 nav section div a img:hover{
     background-color: rgba(145, 145, 145, 0.5);
 }
+.logo-nav {
+    width: 5vw;
+}
 @media screen and (orientation:portrait) {
     nav{
         background-color: black;
@@ -109,11 +112,15 @@ nav section div a img:hover{
     nav section div a img{
         height: unset;
         width: 8vw;
-        max-width: 9vw;
+        max-width: 10vw;
         padding: unset;
     }
-    .logo-nav{
-        display: none;
+    .logo-nav {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(-50%,-50%);
+        visibility: hidden;
     }
 }
 
