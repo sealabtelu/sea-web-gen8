@@ -21,9 +21,7 @@
 
 
 .section1 {
-    background: url('assets/bg.png');
-    background-position: center;
-    background-size: cover;
+    background: var(--theme-color) url('assets/bg.png') center/cover;
     height: 100vh;
 }
 .welcome, .lab-text {
