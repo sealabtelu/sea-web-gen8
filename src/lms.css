@@ -21,7 +21,7 @@ main{
     left: 9vw;
     --width-main:74vw;
     width: var(--width-main);
-    padding: 5.5vh 7.5vw;
+    padding: 6vh 7.5vw;
     font-family: 'Poppins';
     font-style: normal;
 }
