@@ -106,11 +106,9 @@ hr {
     padding-left: 1vw;
     font-weight: 700;
 }
-.timeline-task {
-    font-weight: 500;
-}
 .timeline-task p, .timeline-task h2{
     color: black;
+    font-weight: 500;
 }
 .items img{
     width: calc(10vw + 5vh);
