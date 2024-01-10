@@ -21,18 +21,22 @@ main{
     left: 9vw;
     --width-main:74vw;
     width: var(--width-main);
-    padding: 6vh 7.5vw;
+    padding: 4vh 7.5vw;
     font-family: 'Poppins';
     font-style: normal;
 }
 .lms-title{
     display: flex;
-    height: 15vh;
+    /* height: 15vh; */
     justify-content: space-between;
     align-items: center;
     font-weight: 700;
 }
+.lms-title h1 {
+    font-size: 2.5vw;
+}
 .lms-title a{
+    font-size: 1.3vw;
     color: black;
 }
 .display-akun{
@@ -50,9 +54,12 @@ main{
 .content{
     position: relative;
     border: 2px solid var(--bordercard-color);
-    border-radius: 1.5rem;
+    border-radius: 10px;
     padding: 2vh 2vw;
     min-height: 50vh;
+}
+.content h2{
+    font-size: 1.5vw;
 }
 .content button{
     border-radius: 1.1vh;
@@ -138,30 +145,30 @@ hr {
     display: grid;
     grid-template-columns:auto auto auto;
     height: 50vh;
-    width: 96%;
-    gap: 3vh 2vw;
-    padding: 2vh 2vw;
+    width: 104%;
+    gap: 3vh 3vw;
+    padding: 2vh 0vw;
 }
 .item-grid{
     position: relative;
     height: 100%;
-    width: 90%;
+    width: 86%;
     background-color: var(--theme-color);
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: -3px 5px 34.5px -10px rgba(0, 0, 0, 0.25);
 }
 .item-title{
     position: absolute;
     height: 40%;
-    width: 90%;
+    width: 80%;
     padding: 5% 10%;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     bottom: 0;
     background-color: white;
     display: flex;
     flex-direction: column;
-    gap:0.1vh;
+    gap:0vh;
 }
 .item-title h2, .item-title h3, .item-title h4{
     margin: 0;
@@ -175,6 +182,7 @@ hr {
 }
 .item-title h3{
     font-size: 2vh;
+    color : black;
 }
 .item-title h4{
     font-size: 1.5vh;
@@ -189,7 +197,7 @@ hr {
     align-items: center;
     margin: 2vh 0;
     padding: 2vh 2vw;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.25);
     color: var(--theme-color);
 }
