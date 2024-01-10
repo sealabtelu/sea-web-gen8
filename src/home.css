@@ -21,7 +21,7 @@
 
 
 .section1 {
-    background: url(src/assets/bg.png);
+    background: url('assets/bg.png');
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -161,7 +161,7 @@
 
 
 .section3 {
-    background: var(--theme-color) url('src/assets/bg-section3.png') center/cover;
+    background: var(--theme-color) url('assets/bg-section3.png') center/cover;
 }
 .content.section3 {
     display: flex;
