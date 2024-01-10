@@ -32,6 +32,9 @@ main{
     align-items: center;
     font-weight: 700;
 }
+.lms-title a{
+    color: black;
+}
 .display-akun{
     display: flex;
     flex-direction: row;
@@ -101,10 +104,16 @@ hr {
     align-items: center;
     min-height: 40vh;
 }
+.timeline-container a{
+    text-decoration: none;
+}
 .timeline-container p{
     color: var(--theme-color);
     padding-left: 1vw;
     font-weight: 700;
+}
+.timeline-task:hover{
+    cursor: pointer;
 }
 .timeline-task p, .timeline-task h2{
     color: black;
@@ -161,13 +170,13 @@ hr {
     color: var(--theme-color);
 }
 .item-title h2{
-    font-size: 100%;
+    font-size: 2.5vh;
 }
 .item-title h3{
-    font-size: 80%;
+    font-size: 2vh;
 }
 .item-title h4{
-    font-size: 60%;
+    font-size: 1.5vh;
 }
 .course-container{
     position: relative;
@@ -189,9 +198,6 @@ hr {
 }
 .course-task:hover{
     cursor: pointer;
-}
-.timeline-task:hover{
-    cursor: default;
 }
 .course-task-content{
     display: flex;
@@ -217,9 +223,31 @@ hr {
     main{
         left: 0;
         width: 85vw;
+        padding-top: 5vh;
+    }
+    .lms-title h1{
+        font-size: 7vw;
+    }
+    .lms-title h2{
+        font-size: 5vw;
+    }
+    .content{
+        padding: 2vh 4vw;
     }
     .tabel-nilai{
-        font-size: 3vw;
+        font-size: 2.33vw;
     }
-
+    .items-course{
+        grid-template-columns:auto auto;
+        height: 50vh;
+    }
+    .item-title h2{
+        font-size: 2.5vw;
+    }
+    .item-title h3{
+        font-size: 2vw;
+    }
+    .item-title h4{
+        font-size: 1.5vw;
+    }
 }

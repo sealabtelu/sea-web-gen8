@@ -112,8 +112,12 @@ nav section div a img:hover{
         max-width: 9vw;
         padding: unset;
     }
+    
     .logo-nav{
-        display: none;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(-50%,-50%);
     }
 }
 
