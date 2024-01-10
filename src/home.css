@@ -4,7 +4,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
 
 :root{
-    --light-color:#e6f9ff;
+    --light-color:rgb(243, 255, 254);
     --theme-color:#43C6F0;
     --dark-color: #333333;
     --transparent-color:#dbf7ff3f;
@@ -21,7 +21,7 @@
 
 
 .section1 {
-    background: url(assets/bg.png);
+    background: url(src/assets/bg.png);
     background-position: center;
     background-size: cover;
     height: 100vh;
