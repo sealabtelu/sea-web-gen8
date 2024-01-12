@@ -4,7 +4,27 @@ body {
     font-family: 'Cascadia Mono', sans-serif;
     overflow-x: hidden;
 }
-
+@media screen and (orientation:landscape) {
+    nav section:hover{
+        width: 20vw;
+        text-align: left;
+    }
+    nav:has(section:hover) + main{
+        width: 65vw;
+        left:18vw;
+    }
+}
+main{
+    position: relative;
+    top: 0;
+    left: 9vw;
+    --width-main:74vw;
+    width: var(--width-main);
+    padding: 4vh 7.5vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    transition: 0.5s ease-in;
+}
 
 :root{
     --light-color:#e6f9ff;
@@ -22,8 +42,9 @@ nav {
 }
 nav section {
     display: flex;
+    width: 9vw;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(10px);
     position:absolute;
@@ -34,62 +55,51 @@ nav section {
     padding-top: 8vh;
     flex-direction: column;
     gap:17vh;
-    transition: 0.5s ease-in-out;
     box-shadow: -1px 4px 47.3px -4px rgba(67, 147, 240, 0.16);
     border-radius: 0 10px 10px 0;
+    transition: 0.5s ease-in;
+    overflow: hidden;
 }
 nav section div{
     display: flex;
     flex-direction: column;
     gap:2vh;
 }
-nav section .fa{
-    display:none;
-}
-nav section .fa-bars{
-    position: absolute;
-    display: block;
-    color:#827886;
-    margin: 10px;
-    font-size: calc(2vh + 2vw);
-    top:5vh;
-    right:202.5vw;
-    cursor:pointer;
-}
-nav section img {
-    width: 5.5vw;
-}
-nav section .close{
-    display: block;
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left:calc(50vh - 20vw);
-}
 nav section a {
-    display: block;
+    display: inline-flex;
     color: #626262;
-    text-align: center;
+    text-align: left;
     padding: 1vw 2vw;
     text-decoration: none;
     border-radius: 5px;
     font-size: calc(0.75vh + 1vw);
     font-family: 'Cascadia Mono SemiBold', sans-serif;
-    font-size: calc(2vh + 0.75vw);
+    font-size: calc(1.25vh + 0.75vw);
     text-align: center;
 }
 nav section div a img{
-    width: 4vw;
+    width: 5vw;
+    align-self: center;
     border-radius: 10px;
 }
 nav section div a img:hover{
     background-color: rgba(145, 145, 145, 0.5);
 }
+nav section div a p{
+    padding-left: 2vw;
+}
 .logo-nav {
     width: 5vw;
+    padding-left: calc(50% - 2.5vw);
 }
+
 @media screen and (orientation:portrait) {
+    main{
+        left: 0;
+        width: 85vw;
+        padding-top: 5vh;
+        transition: none;
+    }
     nav{
         background-color: black;
     }
@@ -98,16 +108,19 @@ nav section div a img:hover{
         position: fixed;
         top:unset;
         bottom:0;
-        
         flex-direction: row;
         height: unset;
         width: 95vw;
         padding: 1vh 2.5vw;
         gap:3vw;
+        transition: none;
     }
     nav section div{
         flex-direction: row;
         gap:5vw;
+    }
+    nav section div a{
+        font-size: 3vw;
     }
     nav section div a img{
         height: unset;

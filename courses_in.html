@@ -13,9 +13,9 @@
         <section id="togel">
         <img src="src/assets/SEA-logo.png" alt="Logo" class="logo-nav">
         <div>
-            <a href="lms.html"><img src="src/assets/lms_rumah_vector.png"></a>
-            <a href="score.html"><img src="src/assets/lms_medali_vector.png"></a>
-            <a href="courses.html"><img src="src/assets/lms_NoteBoard_vector_click.png"></a>
+            <a href="lms.html"><img src="src/assets/lms_rumah_vector_click.png"> <p>Dashboard</p></a>
+            <a href="score.html"><img src="src/assets/lms_medali_vector.png"> <p>Courses</p></a>
+            <a href="courses.html"><img src="src/assets/lms_NoteBoard_vector.png"> <p>Account</p></a>
         </div>
         </section>
     </nav>
@@ -30,57 +30,81 @@
                 serta membahas struktur data dinamis seperti linked list, queue, stack, dan tree. 
                 Modul ini mencakup operasi-operasi dasar seperti pencarian, penyisipan, dan penghapusan, sambil 
                 menekankan penggunaan pointer dan alokasi memori dinamis.</p>
+                <iframe src="https://www.youtube.com/embed/wh9QLjk3M2k?si=W6KrBMGOK-D43QLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <div class="course-container">
                 <div class="course-task" onclick="showcontent(this)">
-                    <h2><i class="fa fa-arrow-right" style="padding-right: 10px;"></i> Tugas Pendahuluan</h2>
+                    <div style="display: flex;flex-direction: column;width: 100%;">
+                        <h2><i class="fa fa-arrow-right" style="padding-right: 10px;"></i> Tugas Pendahuluan</h2>
+                        <div class="course-task-content" id="course-task-content">
+                            <div style="display: flex;flex-direction: column;">
+                                <div style="display: flex; align-items: center;">
+                                    <h3 style="margin: 0;padding: 0 2vw;width: 30%;">Opened :</h3>
+                                    <p>Wednesday, 7 January 2024 | 03:00 PM</p>
+                                </div>
+                                <div style="display: flex; align-items: center;">
+                                    <h3 style="margin: 0;padding: 0 2vw;width: 30%;">Closed :</h3>
+                                    <p>Sunday, 12 January 2024 | 11:59 PM</p>
+                                </div>
+                                <div style="margin: 2vh 0; display: flex; align-items: center;justify-content: center;background-color: rgba(128, 128, 128, 0.394);border-radius: 5px;">
+                                    <a href="" style="text-decoration: none;color: gray;font-size: calc(0.85vw + 0.85vh);">Link Tugas Pendahuluan</a>
+                                </div>
+                            </div>
+                            <form action="courses_in.html" method="POST" enctype="multipart/form-data" style="display: flex;flex-direction: column;">
+                                <div class="drop-zone">
+                                    <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                                    <input type="file" name="myFile" class="drop-zone__input">
+                                </div>
+                                <input type="submit">
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <div class="close" onclick="hidecontent(this)" id="close"></div>
-                <div class="course-task-content" id="course-task-content">
-                    <div style="display: flex; align-items: center;">
-                        <h3 style="margin: 0;padding: 0 2vw;">Batas Pengumpulan </h3>
-                        <p>|  32 Desember 2090</p>
-                    </div>
-                    <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
-                </div>
             </div>
             <div class="course-container">
                 <div class="course-task" onclick="showcontent(this)">
-                    <h2><i class="fa fa-arrow-right" style="padding-right: 10px;"></i> Tes Awal</h2>
+                    <div style="display: flex;flex-direction: column;width: 100%;">
+                        <h2><i class="fa fa-arrow-right" style="padding-right: 10px;"></i> Tes Awal</h2>
+                        <div class="course-task-content" id="course-task-content">
+                            <div style="display: flex; align-items: center;">
+                                <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan</h3>
+                                <p>|  15 menit</p>
+                            </div>
+                            <a href="tes_awal.html"><button>Mulai</button></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="close" onclick="hidecontent(this)" id="close"></div>
-                <div class="course-task-content" id="course-task-content">
-                    <div style="display: flex; align-items: center;">
-                        <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan</h3>
-                        <p>|  15 menit</p>
-                    </div>
-                    <a href="src/assets/assistants/sef.png" download><button>Mulai</button></a>
-                </div>
             </div>
             <div class="course-container">
                 <div class="course-task" onclick="showcontent(this)">
-                    <h2><i class="fa fa-arrow-right" style="padding-right: 10px;"></i> Jurnal</h2>
+                    <div style="display: flex;flex-direction: column;width: 100%;">
+                        <h2><i class="fa fa-arrow-right" style="padding-right: 10px;"></i> Jurnal</h2>
+                        <div class="course-task-content" id="course-task-content">
+                            <div style="display: flex; align-items: center;">
+                                <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan</h3>
+                                <p>|  45 menit</p>
+                            </div>
+                            <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="close" onclick="hidecontent(this)" id="close"></div>
-                <div class="course-task-content" id="course-task-content">
-                    <div style="display: flex; align-items: center;">
-                        <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan</h3>
-                        <p>|  45 menit</p>
-                    </div>
-                    <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
-                </div>
             </div>
             <div class="course-container">
                 <div class="course-task" onclick="showcontent(this)">
-                    <h2><i class="fa fa-arrow-right" style="padding-right: 10px;"></i> Tugas Akhir</h2>
+                    <div style="display: flex;flex-direction: column;width: 100%;">
+                        <h2><i class="fa fa-arrow-right" style="padding-right: 10px;"></i> Tugas Akhir</h2>
+                        <div class="course-task-content" id="course-task-content">
+                            <div style="display: flex; align-items: center;">
+                                <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan </h3>
+                                <p>|  35 menit</p>
+                            </div>
+                            <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="close" onclick="hidecontent(this)" id="close"></div>
-                <div class="course-task-content" id="course-task-content">
-                    <div style="display: flex; align-items: center;">
-                        <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan </h3>
-                        <p>|  35 menit</p>
-                    </div>
-                    <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
-                </div>
             </div>
         </div>
     </main>
