@@ -223,7 +223,7 @@ hr {
 }
 .close{
     display: none;
-    height: 8vh;
+    height: calc(3vw + 4vh);
     width: 100%;
     position: absolute;
     top: 0;

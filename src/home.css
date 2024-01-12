@@ -306,6 +306,9 @@ footer {
 
 
 @media screen and (orientation:portrait) {
+    .section1{
+        height: 100vh;
+    }
     .assistant-card {
         height: 25vh;
     }
