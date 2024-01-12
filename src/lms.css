@@ -283,6 +283,12 @@ hr {
     align-items: center;
 }
 
+.course-link{
+    border-radius: 0.3vw;
+    background: rgba(177, 177, 177, 0.14);
+    padding: 1vw;
+}
+
 .course-info div p,
 .course-submission div p {
     margin: 0;
