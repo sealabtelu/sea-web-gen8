@@ -36,26 +36,29 @@
                     <div style="display: flex;flex-direction: column;width: 100%;">
                         <h2><i class="fa fa-arrow-right" style="padding-right: 10px;"></i> Tugas Pendahuluan</h2>
                         <div class="course-task-content" id="course-task-content">
-                            <div style="display: flex;flex-direction: column;">
+                            <div class="course-info" style="display: flex;flex-direction: column;font-size: 0.5rem;">
                                 <div style="display: flex; align-items: center;">
-                                    <h3 style="margin: 0;padding: 0 2vw;width: 30%;">Opened :</h3>
+                                    <h3 style="margin: 0;padding: 0 2.3vw;width: 30%;">Opened :</h3>
                                     <p>Wednesday, 7 January 2024 | 03:00 PM</p>
                                 </div>
                                 <div style="display: flex; align-items: center;">
-                                    <h3 style="margin: 0;padding: 0 2vw;width: 30%;">Closed :</h3>
+                                    <h3 style="margin: 0;padding: 0 2.3vw;width: 30%;">Closed :</h3>
                                     <p>Sunday, 12 January 2024 | 11:59 PM</p>
                                 </div>
                                 <div style="margin: 2vh 0; display: flex; align-items: center;justify-content: center;background-color: rgba(128, 128, 128, 0.394);border-radius: 5px;">
                                     <a href="" style="text-decoration: none;color: gray;font-size: calc(0.85vw + 0.85vh);">Link Tugas Pendahuluan</a>
                                 </div>
                             </div>
-                            <form action="courses_in.html" method="POST" enctype="multipart/form-data" style="display: flex;flex-direction: column;">
-                                <div class="drop-zone">
-                                    <span class="drop-zone__prompt">Drop file here or click to upload</span>
-                                    <input type="file" name="myFile" class="drop-zone__input">
-                                </div>
-                                <input type="submit">
-                            </form>
+                            <div class="course-submission" style="display: flex;flex-direction: column;">
+                                <h3>Submission</h3>
+                                <form action="courses_in.html" method="POST" enctype="multipart/form-data">
+                                    <div class="drop-zone">
+                                        <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                                        <input type="file" name="myFile" class="drop-zone__input">
+                                    </div>
+                                    <input type="submit" value="Mark as done">
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
