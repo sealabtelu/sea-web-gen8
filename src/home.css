@@ -22,7 +22,7 @@
 
 .section1 {
     background: var(--theme-color) url('assets/bg.png') center/cover;
-    height: 100vh;
+    height: 130vh;
 }
 .welcome, .lab-text {
     display: flex;
