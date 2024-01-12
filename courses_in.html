@@ -11,18 +11,20 @@
 <body>
     <nav class="navbar">
         <section id="togel">
-        <img src="src/assets/SEA-logo.png" alt="Logo" class="logo-nav">
-        <div>
-            <a href="lms.html"><img src="src/assets/lms_rumah_vector_click.png"> <p>Dashboard</p></a>
-            <a href="score.html"><img src="src/assets/lms_medali_vector.png"> <p>Courses</p></a>
-            <a href="courses.html"><img src="src/assets/lms_NoteBoard_vector.png"> <p>Account</p></a>
-        </div>
+            <img src="src/assets/SEA-logo.png" alt="Logo" class="logo-nav">
+            <div>
+                <a href="lms.html"><img src="src/assets/lms_rumah_vector_click.png" alt="Dashboard Icon"> <p>Dashboard</p></a>
+                <a href="score.html"><img src="src/assets/lms_medali_vector.png" alt="Courses Icon"> <p>Courses</p></a>
+                <a href="courses.html"><img src="src/assets/lms_NoteBoard_vector.png" alt="Account Icon"> <p>Account</p></a>
+            </div>
         </section>
     </nav>
     <main>
         <div class="lms-title">
             <h1><a href="courses.html"><i class="fa fa-arrow-left" style="padding-right: 10px;"></i></a> My Courses</h1>
-            <a class="display-akun" href="https://www.youtube.com/watch?v=wh9QLjk3M2k"><h2>Naja</h2><img src="src/assets/assistants/sef.png"></a>
+            <a class="display-akun" href="https://www.youtube.com/watch?v=wh9QLjk3M2k">
+                <h2>Naja</h2><img src="src/assets/assistants/sef.png" alt="Assistant Image">
+            </a>
         </div>
         <div class="content">
             <h2>Modul 1 - Struktur Data</h2>
@@ -30,87 +32,45 @@
                 serta membahas struktur data dinamis seperti linked list, queue, stack, dan tree. 
                 Modul ini mencakup operasi-operasi dasar seperti pencarian, penyisipan, dan penghapusan, sambil 
                 menekankan penggunaan pointer dan alokasi memori dinamis.</p>
-                <iframe src="https://www.youtube.com/embed/wh9QLjk3M2k?si=W6KrBMGOK-D43QLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/wh9QLjk3M2k?si=W6KrBMGOK-D43QLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
             <div class="course-container">
                 <div class="course-task" onclick="showcontent(this)">
-                    <div style="display: flex;flex-direction: column;width: 100%;">
-                        <h2><i class="fa fa-arrow-right" style="padding-right: 10px;"></i> Tugas Pendahuluan</h2>
-                        <div class="course-task-content" id="course-task-content">
-                            <div class="course-info" style="display: flex;flex-direction: column;font-size: 0.5rem;">
-                                <div style="display: flex; align-items: center;">
-                                    <h3 style="margin: 0;padding: 0 2.3vw;width: 30%;">Opened :</h3>
-                                    <p>Wednesday, 7 January 2024 | 03:00 PM</p>
+                    <div class="task-header">
+                        <h2><i class="fa fa-arrow-left" style="padding-right: 10px;"></i> Tugas Pendahuluan</h2>
+                    </div>
+                    <div class="course-task-content">
+                        <div class="course-info">
+                            <div>
+                                <h3>Opened :</h3>
+                                <p>Wednesday, 7 January 2024 | 03:00 PM</p>
+                            </div>
+                            <div>
+                                <h3>Closed :</h3>
+                                <p>Sunday, 12 January 2024 | 11:59 PM</p>
+                            </div>
+                            <hr style="width: 100%; margin:1vw 0;">
+                            <div class="course-link">
+                                <a href="" style="text-decoration: none; color: gray;">Link Tugas Pendahuluan</a>
+                            </div>
+                        </div>
+                        <div class="course-submission">
+                            <h3>Submission</h3>
+                            <form action="courses_in.html" method="POST" enctype="multipart/form-data">
+                                <div class="drop-zone" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
+                                    <span class="drop-zone__prompt">Drop file here<br>or click to upload</span>
+                                    <input type="file" name="myFile" class="drop-zone__input" onchange="handleFileChange(this)">
                                 </div>
-                                <div style="display: flex; align-items: center;">
-                                    <h3 style="margin: 0;padding: 0 2.3vw;width: 30%;">Closed :</h3>
-                                    <p>Sunday, 12 January 2024 | 11:59 PM</p>
-                                </div>
-                                <div style="margin: 2vh 0; display: flex; align-items: center;justify-content: center;background-color: rgba(128, 128, 128, 0.394);border-radius: 5px;">
-                                    <a href="" style="text-decoration: none;color: gray;font-size: calc(0.85vw + 0.85vh);">Link Tugas Pendahuluan</a>
-                                </div>
-                            </div>
-                            <div class="course-submission" style="display: flex;flex-direction: column;">
-                                <h3>Submission</h3>
-                                <form action="courses_in.html" method="POST" enctype="multipart/form-data">
-                                    <div class="drop-zone">
-                                        <span class="drop-zone__prompt">Drop file here or click to upload</span>
-                                        <input type="file" name="myFile" class="drop-zone__input">
-                                    </div>
-                                    <input type="submit" value="Mark as done">
-                                </form>
-                            </div>
+                                <input type="submit" value="Mark as done">
+                            </form>
                         </div>
                     </div>
                 </div>
                 <div class="close" onclick="hidecontent(this)" id="close"></div>
-            </div>
-            <div class="course-container">
-                <div class="course-task" onclick="showcontent(this)">
-                    <div style="display: flex;flex-direction: column;width: 100%;">
-                        <h2><i class="fa fa-arrow-right" style="padding-right: 10px;"></i> Tes Awal</h2>
-                        <div class="course-task-content" id="course-task-content">
-                            <div style="display: flex; align-items: center;">
-                                <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan</h3>
-                                <p>|  15 menit</p>
-                            </div>
-                            <a href="tes_awal.html"><button>Mulai</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="close" onclick="hidecontent(this)" id="close"></div>
-            </div>
-            <div class="course-container">
-                <div class="course-task" onclick="showcontent(this)">
-                    <div style="display: flex;flex-direction: column;width: 100%;">
-                        <h2><i class="fa fa-arrow-right" style="padding-right: 10px;"></i> Jurnal</h2>
-                        <div class="course-task-content" id="course-task-content">
-                            <div style="display: flex; align-items: center;">
-                                <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan</h3>
-                                <p>|  45 menit</p>
-                            </div>
-                            <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="close" onclick="hidecontent(this)" id="close"></div>
-            </div>
-            <div class="course-container">
-                <div class="course-task" onclick="showcontent(this)">
-                    <div style="display: flex;flex-direction: column;width: 100%;">
-                        <h2><i class="fa fa-arrow-right" style="padding-right: 10px;"></i> Tugas Akhir</h2>
-                        <div class="course-task-content" id="course-task-content">
-                            <div style="display: flex; align-items: center;">
-                                <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan </h3>
-                                <p>|  35 menit</p>
-                            </div>
-                            <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="close" onclick="hidecontent(this)" id="close"></div>
-            </div>
+            </div> 
         </div>
     </main>
     <script src="src/animations.js"></script>
+    <script src="your-updated-js-file.js"></script>
 </body>
 </html>
