@@ -338,6 +338,7 @@ hr {
     background: #D9D9D9;
     color: #A3A3A3;
     margin: 1vw 0;
+    overflow: hidden;
 }
 
 .drop-zone--over {
@@ -349,10 +350,9 @@ hr {
 }
 
 .drop-zone__thumb {
-    width: 10vw;
-    height: 20vh;
-    border-radius: 10px;
-    overflow: hidden;
+    width: 120%;
+    height: 150%;
+    border-radius: 0.2vw;
     background-color: #cccccc;
     background-size: cover;
     position: relative;
@@ -367,8 +367,9 @@ hr {
     padding: 5px 0;
     color: #ffffff;
     background: rgba(0, 0, 0, 0.75);
-    font-size: 14px;
+    font-size: calc(0.4vw + 0.40vh);
     text-align: center;
+    border-radius: 0.2vw;
 }
 
 .course-submission input[type=submit] {
