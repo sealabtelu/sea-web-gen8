@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     function scrollToSection(targetId) {
-        var targetSection = document.getElementById(targetId)?.offsetTop;
+        var targetSection = document.getElementById(targetId);
         if (targetSection) {
             var targetPosition = targetSection.offsetTop;
             window.scrollTo({
@@ -16,16 +16,24 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     var aboutLink = document.querySelector('a[href="#about"]');
-    aboutLink.addEventListener('click', (event) => handleNavLinkClick(event, 'about'));
+    aboutLink.addEventListener('click', function (event) {
+        handleNavLinkClick(event, 'about');
+    });
 
     var exploreLink = document.querySelector('a[href="#explore"]');
-    exploreLink.addEventListener('click', (event) => handleNavLinkClick(event, 'programs'));
+    exploreLink.addEventListener('click', function (event) {
+        handleNavLinkClick(event, 'programs');
+    });
 
     var programsLink = document.querySelector('a[href="#programs"]');
-    programsLink.addEventListener('click', (event) => handleNavLinkClick(event, 'programs'));
+    programsLink.addEventListener('click', function (event) {
+        handleNavLinkClick(event, 'programs');
+    });
 
     var assistantsLink = document.querySelector('a[href="#assistants"]');
-    assistantsLink.addEventListener('click', (event) => handleNavLinkClick(event, 'assistants'));
+    assistantsLink.addEventListener('click', function (event) {
+        handleNavLinkClick(event, 'assistants');
+    });
 
     var homeLink = document.querySelector('a[href="#home"]');
     homeLink.addEventListener('click', function (event) {
