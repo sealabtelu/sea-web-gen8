@@ -101,8 +101,8 @@
 }
 
 hr {
-    margin-top: 2vw;
-    border: 0.1px solid var(--bordercard-color);
+    border: 0.1vw solid var(--bordercard-color);
+    width: 100%;
 }
 
 .items {
@@ -206,6 +206,10 @@ hr {
     font-size: 1.5vh;
 }
 
+.item-title h4 {
+    font-size: 1.5vh;
+}
+
 .content iframe {
     width: 100%;
     border-radius: 10px;
@@ -276,17 +280,32 @@ hr {
     margin: 0;
 }
 
-.course-info div,
-.course-link,
+.course-time {
+    display: flex;
+    align-items: center;
+}
+
 .course-submission div {
     display: flex;
     align-items: center;
 }
 
-.course-link{
+.course-task-list, .course-code {
+    display: flex;
+    flex-direction: column;
     border-radius: 0.3vw;
     background: rgba(177, 177, 177, 0.14);
     padding: 1vw;
+    margin-bottom: 1vw;
+}
+
+.course-code {
+    background-color: transparent;
+    position: relative;
+    padding: 1vw 0.2vw;
+    max-height: 20vw;
+    max-width: 40vw;
+    overflow: auto;
 }
 
 .course-info div p,
@@ -363,9 +382,19 @@ hr {
 }
 
 .course-container.active .course-task-content {
-    max-height: 50vh;
+    max-height: 100vh;
 }
 
+.course-code pre {
+    padding: 10px;
+    background-color: #282c34;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    color: #abb2bf;
+    white-space: pre;
+    margin: 0;
+}
 
 @media screen and (orientation: portrait) {
     .lms-title h1,

@@ -7,6 +7,7 @@
     <link rel="icon" href="src/assets/logo-web.png">
     <link rel="stylesheet" href="src/lms.css">
     <link rel="stylesheet" href="src/nav-lms.css">
+    <link rel="stylesheet" href="src/prism.css">
 </head>
 <body>
     <nav class="navbar">
@@ -21,7 +22,7 @@
     </nav>
     <main>
         <div class="lms-title">
-            <h1><a href="courses.html"><i class="fa fa-arrow-left" style="padding-right: 10px;"></i></a> My Courses</h1>
+            <h1><a href="courses.html"><i class="fa fa-arrow-left"></i></a> My Courses</h1>
             <a class="display-akun" href="https://www.youtube.com/watch?v=wh9QLjk3M2k">
                 <h2>Naja</h2><img src="src/assets/assistants/sef.png" alt="Assistant Image">
             </a>
@@ -37,23 +38,125 @@
             <div class="course-container">
                 <div class="course-task" onclick="showcontent(this)">
                     <div class="task-header">
-                        <h2><i class="fa fa-arrow-left" style="padding-right: 10px;"></i> Tugas Pendahuluan</h2>
+                        <h2><i class="fa fa-arrow-left"></i> Tugas Pendahuluan</h2>
                     </div>
                     <div class="course-task-content">
                         <div class="course-info">
-                            <div>
+                            <div class="course-time">
                                 <h3>Opened :</h3>
                                 <p>Wednesday, 7 January 2024 | 03:00 PM</p>
                             </div>
-                            <div>
+                            <div class="course-time">
                                 <h3>Closed :</h3>
                                 <p>Sunday, 12 January 2024 | 11:59 PM</p>
                             </div>
-                            <hr style="width: 100%; margin:1vw 0;">
-                            <div class="course-link">
-                                <a href="" style="text-decoration: none; color: gray;">Link Tugas Pendahuluan</a>
+                            <hr>
+                            <div class="course-task-list">
+                                <a href="" class="task-link">Link Tugas Pendahuluan</a>
                             </div>
-                            <hr style="width: 100%; margin:1vw 0; border: 1.2px solid rgba(36, 168, 225, 0.425)">
+                            <div class="course-task-list">
+                                <p>Halo ini namanya teks. Teks ini sebenarnya buat contoh soal tugas pendahuluan,
+                                    jurnal, tes akhir yang isinya built-in aka bukan menggunakan link lagi. Jadi
+                                    tes1,tes2,tes3.
+                                </p>
+                                <div class="course-code">
+                                    <pre><code class="language-c">
+                                    #include &lt;stdio.h&gt;
+                                    #include &lt;stdlib.h&gt;
+                                    #include &lt;string.h&gt;
+                                    
+                                    struct datautang
+                                    {
+                                        int tgl, bln, thn, jml, dtgl, dbln, dthn;
+                                        char nama[15];
+                                    }data, Adata[100], temp;
+                                    
+                                    char filename[20];
+                                    int i, j;
+                                    
+                                    FILE *fp;
+                                    
+                                    void Masuk(int mode)
+                                    {
+                                        char name[20], pw[20], regname[20], regpw[20], logname[20], logpw[20];
+                                    
+                                        if (mode == 1)
+                                        {
+                                            printf("===== REGISTRASI =====\n");
+                                            registrasi:
+                                            fp = fopen("akun.txt", "a+"); // membuka file dalam mode membaca dan menulis
+                                            fflush(stdin);
+                                            // membaca input username dan password baru dari pengguna
+                                            printf("Masukkan username: ");
+                                            scanf("%s", name);
+                                            printf("Masukkan password: ");
+                                            scanf("%s", pw);
+                                            // Mengecek apakah username yang diinput sudah ada di file akun
+                                            while(!feof(fp)) // pengulangan sampai akhir dari isi file
+                                            {
+                                                fscanf(fp, "%s %s", regname, regpw); // membaca file per baris
+                                                if(strcmp(name, regname) == 0) // mengecek username yang diinput dengan username yang tersimpan di file
+                                                {
+                                                    printf("==============================================================\n"
+                                                            "Username sudah terpakai, mohon registrasi dengan username lain\n"
+                                                            "==============================================================\n\n");
+                                                    fclose(fp);
+                                                    goto registrasi; // Jika username sudah ada di file maka proses registrasi diulang
+                                                }
+                                            }
+                                    
+                                            fprintf(fp, "%s %s\n", name, pw); // menulis username dan password ke dalam file
+                                            fclose(fp); // menutup file
+                                    
+                                            printf("\n==================================\n"
+                                                    "Registrasi berhasil. Silahkan login!\n"
+                                                    "==================================\n\n");
+                                            goto login; // lanjut ke menu login
+                                        }
+                                        else if (mode == 2)
+                                        {
+                                            printf("===== LOGIN =====\n");
+                                            login:
+                                            fp=fopen("akun.txt", "r"); // membuka file dalam mode membaca
+                                            fflush(stdin);
+                                            // membaca input username dan password dari pengguna
+                                            printf("Masukkan username: ");
+                                            scanf("%s", logname);
+                                            printf("Masukkan password: ");
+                                            scanf("%s", logpw);
+                                            // Mengecek apakah username dan password yang diinput sesuai dengan yang ada di file
+                                            while(!feof(fp)) // pengulangan sampai akhir dari isi file
+                                            {
+                                                fscanf(fp, "%s %s", regname, regpw); // membaca file per baris
+                                                if(strcmp(logname, regname) == 0 && strcmp(logpw, regpw) == 0) // jika username & password cocok keluar dari loop
+                                                {
+                                                    printf("Login berhasil.\n");
+                                                    strcpy(filename, logname); // menyalin username ke filename
+                                                    system("cls");
+                                                    break;
+                                                }
+                                                else if(feof(fp)) // Jika sudah sampai akhir dari isi file tidak ada yang cocok proses login diulang
+                                                {
+                                                    printf("\n========================================================\n"
+                                                            "Login gagal. Pastikan username dan password sudah benar!\n"
+                                                            "========================================================\n\n");
+                                                    fclose(fp);
+                                                    goto login;
+                                                }
+                                            }
+                                    
+                                        fclose(fp); // menutup file
+                                        }
+                                        else
+                                        {
+                                            system("cls");
+                                            goto login;
+                                        }
+                                    }
+                                    </code></pre>
+                                </div>
+                            </div>
+                            <hr>
                         </div>
                         <div class="course-submission">
                             <h3>Submission</h3>
@@ -72,6 +175,6 @@
         </div>
     </main>
     <script src="src/animations.js"></script>
-    <script src="your-updated-js-file.js"></script>
+    <script src="src/prism.js"></script>
 </body>
 </html>

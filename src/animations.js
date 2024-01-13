@@ -65,17 +65,17 @@ document.addEventListener('DOMContentLoaded', function () {
     function toggleCourseTaskContent(element) {
         var courseTaskContent = element.closest(".course-container").querySelector(".course-task-content");
         if (courseTaskContent) {
-            courseTaskContent.style.maxHeight = (courseTaskContent.style.maxHeight === '50vh') ? '0vh' : '50vh';
+            courseTaskContent.style.maxHeight = (courseTaskContent.style.maxHeight === '100vw') ? '0vh' : '100vw';
             var close = element.closest(".course-container").querySelector(".close");
             if (close) {
-                close.style.display = (courseTaskContent.style.maxHeight === '50vh') ? 'block' : 'none';
+                close.style.display = (courseTaskContent.style.maxHeight === '100vw') ? 'block' : 'none';
             }
         }
     }
 
     hideAllCourseTaskContent();
 
-    document.querySelectorAll(".course-task").forEach(function (task) {
+    document.querySelectorAll(".task-header").forEach(function (task) {
         task.addEventListener("click", function () {
             toggleCourseTaskContent(this);
         });
