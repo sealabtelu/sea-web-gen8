@@ -4,42 +4,34 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
 
-
-:root{
-    --light-color:#e6f9ff;
-    --theme-color:#43C6F0;
+:root {
+    --light-color: #e6f9ff;
+    --theme-color: #43C6F0;
     --dark-color: #333333;
-    --transparent-color:rgba(252, 254, 255, 0.806);
+    --transparent-color: rgba(252, 254, 255, 0.806);
     --btnborder-color: #24A9E1;
     --bordercard-color: rgba(36, 169, 225, 0.24);
 }
 
 /* LMS Home Page */
-main{
-    position: relative;
-    top: 0;
-    left: 9vw;
-    --width-main:74vw;
-    width: var(--width-main);
-    padding: 4vh 7.5vw;
-    font-family: 'Poppins';
-    font-style: normal;
-}
-.lms-title{
+.lms-title {
     display: flex;
-    /* height: 15vh; */
     justify-content: space-between;
     align-items: center;
     font-weight: 700;
 }
-.lms-title h1 {
+
+.lms-title h1, .lms-title i {
     font-size: 2.5vw;
+    padding-right: 1vw;
 }
-.lms-title a{
+
+.lms-title a {
     font-size: 1.3vw;
     color: black;
 }
-.display-akun{
+
+.display-akun {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -48,20 +40,25 @@ main{
     text-decoration: none;
     font-weight: 200;
 }
-.display-akun img{
+
+.display-akun img {
     max-height: 7vh;
 }
-.content{
+
+.content {
     position: relative;
     border: 2px solid var(--bordercard-color);
     border-radius: 10px;
     padding: 2vh 2vw;
     min-height: 50vh;
+    margin: 3vh 0;
 }
-.content h2{
+
+.content h2 {
     font-size: 1.5vw;
 }
-.content button{
+
+.content button {
     border-radius: 1.1vh;
     border: 1px solid var(--btnborder-color);
     background-color: var(--transparent-color);
@@ -70,68 +67,80 @@ main{
     font-weight: 200;
     font-size: 75%;
 }
-.content button:hover{
+
+.content button:hover {
     cursor: pointer;
 }
-.dropdown{
+
+.dropdown {
     display: none;
     flex-direction: column;
     position: absolute;
     top: 100%;
     margin-top: 1vh;
     padding: 2vh 1vw;
-    border: 1px solid var(--theme-color) ;
+    border: 1px solid var(--theme-color);
     width: 80%;
     font-size: 75%;
     z-index: 1;
     word-wrap: break-word;
 }
-.dropdown a{
+
+.dropdown a {
     margin: 1vh 0;
 }
-.close-dropdown{
+
+.close-dropdown {
     display: none;
     border-radius: 10px;
     position: absolute;
-    top:-15vh;
+    top: -15vh;
     left: -5vh;
     height: 60vh;
     width: calc(var(--width-main) - 10vw);
     z-index: 0;
 }
+
 hr {
-    margin-top: 2vw;
-    border: 0.1px solid var(--bordercard-color)
+    border: 0.1vw solid var(--bordercard-color);
+    width: 100%;
 }
-.items{
+
+.items {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     min-height: 40vh;
 }
-.timeline-container a{
+
+.timeline-container a {
     text-decoration: none;
 }
-.timeline-container p{
+
+.timeline-container p {
     color: var(--theme-color);
     padding-left: 1vw;
     font-weight: 700;
 }
-.timeline-task:hover{
+
+.timeline-task:hover {
     cursor: pointer;
 }
-.timeline-task p, .timeline-task h2{
+
+.timeline-task p,
+.timeline-task h2 {
     color: black;
     font-weight: 500;
 }
-.items img{
+
+.items img {
     width: calc(10vw + 5vh);
 }
 
 /* Score Page */
-.tabel-nilai{
+.tabel-nilai {
     text-align: center;
     table-layout: auto;
     font-size: 2.33vh;
@@ -141,23 +150,26 @@ hr {
 }
 
 /* Course Page */
-.items-course{
+.items-course {
     display: grid;
-    grid-template-columns:auto auto auto;
+    grid-template-columns: auto auto auto;
     height: 50vh;
     width: 104%;
     gap: 3vh 3vw;
     padding: 2vh 0vw;
 }
-.item-grid{
+
+.item-grid {
     position: relative;
     height: 100%;
     width: 86%;
     background-color: var(--theme-color);
     border-radius: 8px;
     box-shadow: -3px 5px 34.5px -10px rgba(0, 0, 0, 0.25);
+    word-wrap: break-word;
 }
-.item-title{
+
+.item-title {
     position: absolute;
     height: 40%;
     width: 80%;
@@ -168,95 +180,305 @@ hr {
     background-color: white;
     display: flex;
     flex-direction: column;
-    gap:0vh;
+    gap: 0vh;
 }
-.item-title h2, .item-title h3, .item-title h4{
+
+.item-title h2,
+.item-title h3,
+.item-title h4 {
     margin: 0;
 }
-.item-title h4{
+
+.item-title h4 {
     color: var(--theme-color);
 }
-.item-title h2{
+
+.item-title h2 {
     font-size: 2.5vh;
-    color : black;
+    color: black;
 }
-.item-title h3{
+
+.item-title h3 {
     font-size: 2vh;
-    color : black;
+    color: black;
 }
-.item-title h4{
+
+.item-title h4 {
     font-size: 1.5vh;
 }
-.course-container{
+
+.item-title h4 {
+    font-size: 1.5vh;
+}
+
+#arrow-icon {
+    margin-right: 1vw;
+    transition: transform 0.2s ease-in-out;
+}
+
+#arrow-icon.fa-rotate-by-270 {
+    transform: rotate(-90deg);
+}
+
+
+.content iframe {
+    width: 100%;
+    border-radius: 10px;
+    height: 50vh;
+}
+
+.course-container {
     position: relative;
     width: 100%;
 }
-.course-task{
+
+.course-task {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     margin: 2vh 0;
     padding: 2vh 2vw;
     border-radius: 8px;
     box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.25);
     color: var(--theme-color);
+    max-height: 1000vw;
 }
-.course-task h2, .course-task p{
+
+.task-header h2 {
     margin: 0;
     font-size: 100%;
 }
-.course-task:hover{
-    cursor: pointer;
-}
-.course-task-content{
+
+.course-task-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    height: 0vh;
+    align-items: baseline;
     overflow: hidden;
     transition: 0.5s ease-in-out;
-}
-.close{
-    display: none;
-    height: 50%;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    color: black;
 }
-.close:hover{
+
+.course-info {
+    width: 100%;
+    margin: 0 2vw 0 2vw;
+    font-size: 75%;
+}
+
+.course-submission h3 {
+    font-size: 90%;
+}
+
+.course-submission {
+    width: 40%;
+    margin-top: 2vw;
+    border-radius: 0.5vw;
+    background: rgba(217, 217, 217, 0.20);
+    padding: 1.5vw;
+}
+
+.course-info,
+.course-submission {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vw;
+}
+
+.course-info h3,
+.course-submission h3 {
+    margin: 0;
+}
+
+.course-time {
+    display: flex;
+    align-items: center;
+}
+
+.course-submission div {
+    display: flex;
+    align-items: center;
+}
+
+.course-task-list, .course-code {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3vw;
+    background: rgba(177, 177, 177, 0.14);
+    padding: 1vw;
+    margin-bottom: 1vw;
+}
+
+.course-code {
+    background-color: transparent;
+    position: relative;
+    padding: 1vw 0.2vw;
+    max-height: 20vw;
+    max-width: 40vw;
+    overflow: auto;
+}
+
+.course-info div p,
+.course-submission div p {
+    margin: 0;
+}
+
+.close {
+    transition: transform 0.5s ease-in-out;
+    display: none;
+}
+
+.close:hover {
     cursor: pointer;
 }
-@media screen and (orientation:portrait) {
-    main{
-        left: 0;
-        width: 85vw;
-        padding-top: 5vh;
+
+.drop-zone {
+    max-width: 100vw;
+    height: 10vh;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: calc(0.40vw + 0.85vh);
+    cursor: pointer;
+    border-radius: 0.5625rem;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    background: #D9D9D9;
+    color: #A3A3A3;
+    margin: 1vw 0;
+    overflow: hidden;
+}
+
+.drop-zone--over {
+    border-style: solid;
+}
+
+.drop-zone__input {
+    display: none;
+}
+
+.drop-zone__thumb {
+    width: 120%;
+    height: 150%;
+    border-radius: 0.2vw;
+    background-color: #cccccc;
+    background-size: cover;
+    position: relative;
+}
+
+.drop-zone__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: calc(0.4vw + 0.40vh);
+    text-align: center;
+    border-radius: 0.2vw;
+}
+
+.course-submission input[type=submit] {
+    width: 100%;
+    height: 2.2vw;
+    border-radius: 0.3vw;
+    background: var(--theme-color);
+    color: white;
+    font-weight: 700;
+    border-color: transparent;
+}
+
+.course-container.active .course-task-content {
+    max-height: 100vh;
+}
+
+.course-code pre {
+    padding: 10px;
+    background-color: #282c34;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    color: #abb2bf;
+    white-space: pre;
+    margin: 0;
+}
+
+.course-quiz {
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+}
+.course-quiz button{
+    background-color: var(--theme-color);
+    border-radius: 0.5vw;
+    color: white;
+    font-weight: 700;
+    height: 3vw;
+    max-width: 15%;
+    border-color: transparent;
+    font-size: 0.8vw;
+    font-family: 'Poppins';
+}
+
+@media screen and (orientation: portrait) {
+    .lms-title h1,
+    .lms-title i {
+        font-size: 6vw;
     }
-    .lms-title h1{
-        font-size: 7vw;
-    }
-    .lms-title h2{
+
+    .lms-title h2 {
         font-size: 5vw;
     }
-    .content{
+
+    .content {
         padding: 2vh 4vw;
     }
-    .tabel-nilai{
+
+    .content h2 {
+        font-size: 7vw;
+    }
+
+    .tabel-nilai {
         font-size: 2.33vw;
     }
-    .items-course{
-        grid-template-columns:auto auto;
-        height: 50vh;
+
+    .items-course {
+        grid-template-columns: auto auto;
+        height: 70vh;
     }
-    .item-title h2{
+
+    .item-title h2 {
         font-size: 2.5vw;
     }
-    .item-title h3{
+
+    .item-title h3 {
+        font-size: 2.25vw;
+    }
+
+    .item-title h4 {
         font-size: 2vw;
     }
-    .item-title h4{
-        font-size: 1.5vw;
+
+    .content p {
+        font-size: 4vw;
+    }
+
+    .course-task h2 {
+        font-size: 3vw;
+    }
+
+    .course-task h3,
+    .course-task p {
+        font-size: 2vw;
+    }
+
+    .drop-zone {
+        height: 10vh;
     }
 }

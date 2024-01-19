@@ -7,22 +7,25 @@
     <link rel="icon" href="src/assets/logo-web.png">
     <link rel="stylesheet" href="src/lms.css">
     <link rel="stylesheet" href="src/nav-lms.css">
+    <link rel="stylesheet" href="src/prism.css">
 </head>
 <body>
     <nav class="navbar">
         <section id="togel">
-        <img src="src/assets/SEA-logo.png" alt="Logo" class="logo-nav">
-        <div>
-            <a href="lms.html"><img src="src/assets/lms_rumah_vector.png"></a>
-            <a href="score.html"><img src="src/assets/lms_medali_vector.png"></a>
-            <a href="courses.html"><img src="src/assets/lms_NoteBoard_vector_click.png"></a>
-        </div>
+            <img src="src/assets/SEA-logo.png" alt="Logo" class="logo-nav">
+            <div>
+                <a href="lms.html"><img src="src/assets/lms_rumah_vector_click.png" alt="Dashboard Icon"> <p>Dashboard</p></a>
+                <a href="score.html"><img src="src/assets/lms_medali_vector.png" alt="Courses Icon"> <p>Courses</p></a>
+                <a href="courses.html"><img src="src/assets/lms_NoteBoard_vector.png" alt="Account Icon"> <p>Account</p></a>
+            </div>
         </section>
     </nav>
     <main>
         <div class="lms-title">
-            <h1><a href="courses.html"><i class="fa fa-arrow-left" style="padding-right: 10px;"></i></a> My Courses</h1>
-            <a class="display-akun" href="https://www.youtube.com/watch?v=wh9QLjk3M2k"><h2>Naja</h2><img src="src/assets/assistants/sef.png"></a>
+            <h1><a href="courses.html"><i class="fa fa-arrow-left"></i></a> My Courses</h1>
+            <a class="display-akun" href="https://www.youtube.com/watch?v=wh9QLjk3M2k">
+                <h2>Naja</h2><img src="src/assets/assistants/sef.png" alt="Assistant Image">
+            </a>
         </div>
         <div class="content">
             <h2>Modul 1 - Struktur Data</h2>
@@ -30,60 +33,241 @@
                 serta membahas struktur data dinamis seperti linked list, queue, stack, dan tree. 
                 Modul ini mencakup operasi-operasi dasar seperti pencarian, penyisipan, dan penghapusan, sambil 
                 menekankan penggunaan pointer dan alokasi memori dinamis.</p>
-            <div class="course-container">
-                <div class="course-task" onclick="showcontent(this)">
-                    <h2><i class="fa fa-arrow-right" style="padding-right: 10px;"></i> Tugas Pendahuluan</h2>
-                </div>
-                <div class="close" onclick="hidecontent(this)" id="close"></div>
-                <div class="course-task-content" id="course-task-content">
-                    <div style="display: flex; align-items: center;">
-                        <h3 style="margin: 0;padding: 0 2vw;">Batas Pengumpulan </h3>
-                        <p>|  32 Desember 2090</p>
+            <iframe src="https://www.youtube.com/embed/wh9QLjk3M2k?si=W6KrBMGOK-D43QLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="course-container">
+                    <div class="course-task">
+                        <div class="task-header">
+                            <h2><i class="fa-solid fa-caret-down fa-rotate-by-270" id="arrow-icon"></i> Tugas Pendahuluan</h2>
+                        </div>
+                        <div class="course-task-content">
+                            <div class="course-info">
+                                <div class="course-time">
+                                    <h3>Opened :</h3>
+                                    <p>Wednesday, 7 January 2024 | 03:00 PM</p>
+                                </div>
+                                <div class="course-time">
+                                    <h3>Closed :</h3>
+                                    <p>Sunday, 12 January 2024 | 11:59 PM</p>
+                                </div>
+                            <hr>
+                            <div class="course-task-list">
+                                <a href="" class="task-link">Link Tugas Pendahuluan</a>
+                            </div>
+                            <div class="course-task-list">
+                                <p>Halo ini namanya teks. Teks ini sebenarnya buat contoh soal tugas pendahuluan,
+                                    jurnal, tes akhir yang isinya built-in aka bukan menggunakan link lagi. Jadi
+                                    tes1,tes2,tes3.
+                                </p>
+                                <div class="course-code">
+                                    <pre><code class="language-c">
+                                    #include &lt;stdio.h&gt;
+                                    #include &lt;stdlib.h&gt;
+                                    #include &lt;string.h&gt;
+                                    
+                                    struct datautang
+                                    {
+                                        int tgl, bln, thn, jml, dtgl, dbln, dthn;
+                                        char nama[15];
+                                    }data, Adata[100], temp;
+                                    
+                                    char filename[20];
+                                    int i, j;
+                                    
+                                    FILE *fp;
+                                    
+                                    void Masuk(int mode)
+                                    {
+                                        char name[20], pw[20], regname[20], regpw[20], logname[20], logpw[20];
+                                    
+                                        if (mode == 1)
+                                        {
+                                            printf("===== REGISTRASI =====\n");
+                                            registrasi:
+                                            fp = fopen("akun.txt", "a+"); // membuka file dalam mode membaca dan menulis
+                                            fflush(stdin);
+                                            // membaca input username dan password baru dari pengguna
+                                            printf("Masukkan username: ");
+                                            scanf("%s", name);
+                                            printf("Masukkan password: ");
+                                            scanf("%s", pw);
+                                            // Mengecek apakah username yang diinput sudah ada di file akun
+                                            while(!feof(fp)) // pengulangan sampai akhir dari isi file
+                                            {
+                                                fscanf(fp, "%s %s", regname, regpw); // membaca file per baris
+                                                if(strcmp(name, regname) == 0) // mengecek username yang diinput dengan username yang tersimpan di file
+                                                {
+                                                    printf("==============================================================\n"
+                                                            "Username sudah terpakai, mohon registrasi dengan username lain\n"
+                                                            "==============================================================\n\n");
+                                                    fclose(fp);
+                                                    goto registrasi; // Jika username sudah ada di file maka proses registrasi diulang
+                                                }
+                                            }
+                                    
+                                            fprintf(fp, "%s %s\n", name, pw); // menulis username dan password ke dalam file
+                                            fclose(fp); // menutup file
+                                    
+                                            printf("\n==================================\n"
+                                                    "Registrasi berhasil. Silahkan login!\n"
+                                                    "==================================\n\n");
+                                            goto login; // lanjut ke menu login
+                                        }
+                                        else if (mode == 2)
+                                        {
+                                            printf("===== LOGIN =====\n");
+                                            login:
+                                            fp=fopen("akun.txt", "r"); // membuka file dalam mode membaca
+                                            fflush(stdin);
+                                            // membaca input username dan password dari pengguna
+                                            printf("Masukkan username: ");
+                                            scanf("%s", logname);
+                                            printf("Masukkan password: ");
+                                            scanf("%s", logpw);
+                                            // Mengecek apakah username dan password yang diinput sesuai dengan yang ada di file
+                                            while(!feof(fp)) // pengulangan sampai akhir dari isi file
+                                            {
+                                                fscanf(fp, "%s %s", regname, regpw); // membaca file per baris
+                                                if(strcmp(logname, regname) == 0 && strcmp(logpw, regpw) == 0) // jika username & password cocok keluar dari loop
+                                                {
+                                                    printf("Login berhasil.\n");
+                                                    strcpy(filename, logname); // menyalin username ke filename
+                                                    system("cls");
+                                                    break;
+                                                }
+                                                else if(feof(fp)) // Jika sudah sampai akhir dari isi file tidak ada yang cocok proses login diulang
+                                                {
+                                                    printf("\n========================================================\n"
+                                                            "Login gagal. Pastikan username dan password sudah benar!\n"
+                                                            "========================================================\n\n");
+                                                    fclose(fp);
+                                                    goto login;
+                                                }
+                                            }
+                                    
+                                        fclose(fp); // menutup file
+                                        }
+                                        else
+                                        {
+                                            system("cls");
+                                            goto login;
+                                        }
+                                    }
+                                    </code></pre>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="course-submission">
+                            <h3>Submission</h3>
+                            <form action="courses_in.html" method="POST" enctype="multipart/form-data">
+                                <div class="drop-zone" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
+                                    <span class="drop-zone__prompt">Drop file here<br>or click to upload</span>
+                                    <input type="file" name="myFile" class="drop-zone__input" onchange="handleFileChange(this)">
+                                </div>
+                                <input type="submit" value="Mark as done">
+                            </form>
+                        </div>
                     </div>
-                    <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
                 </div>
-            </div>
-            <div class="course-container">
-                <div class="course-task" onclick="showcontent(this)">
-                    <h2><i class="fa fa-arrow-right" style="padding-right: 10px;"></i> Tes Awal</h2>
-                </div>
-                <div class="close" onclick="hidecontent(this)" id="close"></div>
-                <div class="course-task-content" id="course-task-content">
-                    <div style="display: flex; align-items: center;">
-                        <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan</h3>
-                        <p>|  15 menit</p>
+                <div class="close" id="close"></div>
+                <div class="course-container">
+                    <div class="course-task">
+                        <div class="task-header">
+                            <h2><i class="fa-solid fa-caret-down fa-rotate-by-270" id="arrow-icon"></i> Tes Awal</h2>
+                        </div>
+                        <div class="course-task-content">
+                            <div class="course-info">
+                                <div class="course-time">
+                                    <h3>Opened :</h3>
+                                    <p>Wednesday, 7 January 2024 | 03:00 PM</p>
+                                </div>
+                                <div class="course-time">
+                                    <h3>Closed :</h3>
+                                    <p>Sunday, 12 January 2024 | 11:59 PM</p>
+                                </div>
+                            <hr>
+                            <div class="course-quiz">
+                                <button>Attempt Now</button>
+                            </div>
+                        </div>
                     </div>
-                    <a href="src/assets/assistants/sef.png" download><button>Mulai</button></a>
                 </div>
-            </div>
-            <div class="course-container">
-                <div class="course-task" onclick="showcontent(this)">
-                    <h2><i class="fa fa-arrow-right" style="padding-right: 10px;"></i> Jurnal</h2>
-                </div>
-                <div class="close" onclick="hidecontent(this)" id="close"></div>
-                <div class="course-task-content" id="course-task-content">
-                    <div style="display: flex; align-items: center;">
-                        <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan</h3>
-                        <p>|  45 menit</p>
+                <div class="course-container">
+                    <div class="course-task">
+                        <div class="task-header">
+                            <h2><i class="fa-solid fa-caret-down fa-rotate-by-270" id="arrow-icon"></i> Jurnal</h2>
+                        </div>
+                        <div class="course-task-content">
+                            <div class="course-info">
+                                <div class="course-time">
+                                    <h3>Opened :</h3>
+                                    <p>Wednesday, 7 January 2024 | 03:00 PM</p>
+                                </div>
+                                <div class="course-time">
+                                    <h3>Closed :</h3>
+                                    <p>Sunday, 12 January 2024 | 11:59 PM</p>
+                                </div>
+                            <hr>
+                            <div class="course-task-list">
+                                <p>Halo ini namanya teks. Teks ini sebenarnya buat contoh soal tugas pendahuluan,
+                                    jurnal, tes akhir yang isinya built-in aka bukan menggunakan link lagi. Jadi
+                                    tes1,tes2,tes3.
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="course-submission">
+                            <h3>Submission</h3>
+                            <form action="courses_in.html" method="POST" enctype="multipart/form-data">
+                                <div class="drop-zone" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
+                                    <span class="drop-zone__prompt">Drop file here<br>or click to upload</span>
+                                    <input type="file" name="myFile" class="drop-zone__input" onchange="handleFileChange(this)">
+                                </div>
+                                <input type="submit" value="Mark as done">
+                            </form>
+                        </div>
                     </div>
-                    <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
                 </div>
-            </div>
-            <div class="course-container">
-                <div class="course-task" onclick="showcontent(this)">
-                    <h2><i class="fa fa-arrow-right" style="padding-right: 10px;"></i> Tugas Akhir</h2>
-                </div>
-                <div class="close" onclick="hidecontent(this)" id="close"></div>
-                <div class="course-task-content" id="course-task-content">
-                    <div style="display: flex; align-items: center;">
-                        <h3 style="margin: 0;padding: 0 2vw;">Durasi Pengerjaan </h3>
-                        <p>|  35 menit</p>
+                <div class="course-container">
+                    <div class="course-task">
+                        <div class="task-header">
+                            <h2><i class="fa-solid fa-caret-down fa-rotate-by-270" id="arrow-icon"></i> Tes Akhir</h2>
+                        </div>
+                        <div class="course-task-content">
+                            <div class="course-info">
+                                <div class="course-time">
+                                    <h3>Opened :</h3>
+                                    <p>Wednesday, 7 January 2024 | 03:00 PM</p>
+                                </div>
+                                <div class="course-time">
+                                    <h3>Closed :</h3>
+                                    <p>Sunday, 12 January 2024 | 11:59 PM</p>
+                                </div>
+                            <hr>
+                            <div class="course-task-list">
+                                <p>Halo ini namanya teks. Teks ini sebenarnya buat contoh soal tugas pendahuluan,
+                                    jurnal, tes akhir yang isinya built-in aka bukan menggunakan link lagi. Jadi
+                                    tes1,tes2,tes3.
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="course-submission">
+                            <h3>Submission</h3>
+                            <form action="courses_in.html" method="POST" enctype="multipart/form-data">
+                                <div class="drop-zone" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
+                                    <span class="drop-zone__prompt">Drop file here<br>or click to upload</span>
+                                    <input type="file" name="myFile" class="drop-zone__input" onchange="handleFileChange(this)">
+                                </div>
+                                <input type="submit" value="Mark as done">
+                            </form>
+                        </div>
                     </div>
-                    <a href="src/assets/assistants/sef.png" download><button>Download</button></a>
                 </div>
-            </div>
+            </div> 
         </div>
     </main>
     <script src="src/animations.js"></script>
+    <script src="src/prism.js"></script>
 </body>
 </html>
