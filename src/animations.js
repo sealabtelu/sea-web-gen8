@@ -81,20 +81,28 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    function rotateArrowIcon(element) {
+        var arrowIcon = element.querySelector("#arrow-icon");
+        arrowIcon.classList.toggle("fa-rotate-by-270");
+    }
+
     hideAllCourseTaskContent();
 
     document.querySelectorAll(".task-header").forEach(function (task) {
         task.addEventListener("click", function () {
             toggleCourseTaskContent(this);
+            rotateArrowIcon(this);
         });
     });
 
     document.querySelectorAll(".close").forEach(function (closeBtn) {
         closeBtn.addEventListener("click", function () {
             toggleCourseTaskContent(this);
+            rotateArrowIcon(this);
         });
     });
 });
+
 
 function toggleDropdown(element, show) {
     var dropdown = element.parentNode.querySelector("#dropdown-timeline");

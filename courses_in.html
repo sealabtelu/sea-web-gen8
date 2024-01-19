@@ -34,22 +34,21 @@
                 Modul ini mencakup operasi-operasi dasar seperti pencarian, penyisipan, dan penghapusan, sambil 
                 menekankan penggunaan pointer dan alokasi memori dinamis.</p>
             <iframe src="https://www.youtube.com/embed/wh9QLjk3M2k?si=W6KrBMGOK-D43QLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
-            <div class="course-container">
-                <div class="course-task" onclick="showcontent(this)">
-                    <div class="task-header">
-                        <h2><i class="fa fa-arrow-left"></i> Tugas Pendahuluan</h2>
-                    </div>
-                    <div class="course-task-content">
-                        <div class="course-info">
-                            <div class="course-time">
-                                <h3>Opened :</h3>
-                                <p>Wednesday, 7 January 2024 | 03:00 PM</p>
-                            </div>
-                            <div class="course-time">
-                                <h3>Closed :</h3>
-                                <p>Sunday, 12 January 2024 | 11:59 PM</p>
-                            </div>
+                <div class="course-container">
+                    <div class="course-task">
+                        <div class="task-header">
+                            <h2><i class="fa-solid fa-caret-down fa-rotate-by-270" id="arrow-icon"></i> Tugas Pendahuluan</h2>
+                        </div>
+                        <div class="course-task-content">
+                            <div class="course-info">
+                                <div class="course-time">
+                                    <h3>Opened :</h3>
+                                    <p>Wednesday, 7 January 2024 | 03:00 PM</p>
+                                </div>
+                                <div class="course-time">
+                                    <h3>Closed :</h3>
+                                    <p>Sunday, 12 January 2024 | 11:59 PM</p>
+                                </div>
                             <hr>
                             <div class="course-task-list">
                                 <a href="" class="task-link">Link Tugas Pendahuluan</a>
@@ -170,7 +169,101 @@
                         </div>
                     </div>
                 </div>
-                <div class="close" onclick="hidecontent(this)" id="close"></div>
+                <div class="close" id="close"></div>
+                <div class="course-container">
+                    <div class="course-task">
+                        <div class="task-header">
+                            <h2><i class="fa-solid fa-caret-down fa-rotate-by-270" id="arrow-icon"></i> Tes Awal</h2>
+                        </div>
+                        <div class="course-task-content">
+                            <div class="course-info">
+                                <div class="course-time">
+                                    <h3>Opened :</h3>
+                                    <p>Wednesday, 7 January 2024 | 03:00 PM</p>
+                                </div>
+                                <div class="course-time">
+                                    <h3>Closed :</h3>
+                                    <p>Sunday, 12 January 2024 | 11:59 PM</p>
+                                </div>
+                            <hr>
+                            <div class="course-quiz">
+                                <button>Attempt Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-task">
+                        <div class="task-header">
+                            <h2><i class="fa-solid fa-caret-down fa-rotate-by-270" id="arrow-icon"></i> Jurnal</h2>
+                        </div>
+                        <div class="course-task-content">
+                            <div class="course-info">
+                                <div class="course-time">
+                                    <h3>Opened :</h3>
+                                    <p>Wednesday, 7 January 2024 | 03:00 PM</p>
+                                </div>
+                                <div class="course-time">
+                                    <h3>Closed :</h3>
+                                    <p>Sunday, 12 January 2024 | 11:59 PM</p>
+                                </div>
+                            <hr>
+                            <div class="course-task-list">
+                                <p>Halo ini namanya teks. Teks ini sebenarnya buat contoh soal tugas pendahuluan,
+                                    jurnal, tes akhir yang isinya built-in aka bukan menggunakan link lagi. Jadi
+                                    tes1,tes2,tes3.
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="course-submission">
+                            <h3>Submission</h3>
+                            <form action="courses_in.html" method="POST" enctype="multipart/form-data">
+                                <div class="drop-zone" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
+                                    <span class="drop-zone__prompt">Drop file here<br>or click to upload</span>
+                                    <input type="file" name="myFile" class="drop-zone__input" onchange="handleFileChange(this)">
+                                </div>
+                                <input type="submit" value="Mark as done">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-task">
+                        <div class="task-header">
+                            <h2><i class="fa-solid fa-caret-down fa-rotate-by-270" id="arrow-icon"></i> Tes Akhir</h2>
+                        </div>
+                        <div class="course-task-content">
+                            <div class="course-info">
+                                <div class="course-time">
+                                    <h3>Opened :</h3>
+                                    <p>Wednesday, 7 January 2024 | 03:00 PM</p>
+                                </div>
+                                <div class="course-time">
+                                    <h3>Closed :</h3>
+                                    <p>Sunday, 12 January 2024 | 11:59 PM</p>
+                                </div>
+                            <hr>
+                            <div class="course-task-list">
+                                <p>Halo ini namanya teks. Teks ini sebenarnya buat contoh soal tugas pendahuluan,
+                                    jurnal, tes akhir yang isinya built-in aka bukan menggunakan link lagi. Jadi
+                                    tes1,tes2,tes3.
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="course-submission">
+                            <h3>Submission</h3>
+                            <form action="courses_in.html" method="POST" enctype="multipart/form-data">
+                                <div class="drop-zone" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
+                                    <span class="drop-zone__prompt">Drop file here<br>or click to upload</span>
+                                    <input type="file" name="myFile" class="drop-zone__input" onchange="handleFileChange(this)">
+                                </div>
+                                <input type="submit" value="Mark as done">
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div> 
         </div>
     </main>

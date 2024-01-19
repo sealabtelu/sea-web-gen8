@@ -23,6 +23,7 @@
 
 .lms-title h1, .lms-title i {
     font-size: 2.5vw;
+    padding-right: 1vw;
 }
 
 .lms-title a {
@@ -210,6 +211,16 @@ hr {
     font-size: 1.5vh;
 }
 
+#arrow-icon {
+    margin-right: 1vw;
+    transition: transform 0.2s ease-in-out;
+}
+
+#arrow-icon.fa-rotate-by-270 {
+    transform: rotate(-90deg);
+}
+
+
 .content iframe {
     width: 100%;
     border-radius: 10px;
@@ -314,6 +325,7 @@ hr {
 }
 
 .close {
+    transition: transform 0.5s ease-in-out;
     display: none;
 }
 
@@ -395,6 +407,23 @@ hr {
     color: #abb2bf;
     white-space: pre;
     margin: 0;
+}
+
+.course-quiz {
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+}
+.course-quiz button{
+    background-color: var(--theme-color);
+    border-radius: 0.5vw;
+    color: white;
+    font-weight: 700;
+    height: 3vw;
+    max-width: 15%;
+    border-color: transparent;
+    font-size: 0.8vw;
+    font-family: 'Poppins';
 }
 
 @media screen and (orientation: portrait) {
