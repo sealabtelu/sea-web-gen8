@@ -1,24 +1,8 @@
-body {
-    margin: 0;
-    cursor: default;
-    font-family: 'Cascadia Mono', sans-serif;
-    overflow-x: hidden;
-}
-@media screen and (orientation:landscape) {
-    nav section:hover{
-        width: 20vw;
-        text-align: left;
-    }
-    nav:has(section:hover) + main{
-        width: 65vw;
-        left:18vw;
-    }
-}
-main{
+main {
     position: relative;
     top: 0;
-    left: 9vw;
-    --width-main:74vw;
+    left: 6vw;
+    --width-main: 77vw;
     width: var(--width-main);
     padding: 4vh 7.5vw;
     font-family: 'Poppins';
@@ -26,114 +10,81 @@ main{
     transition: 0.5s ease-in;
 }
 
-:root{
-    --light-color:#e6f9ff;
-    --theme-color:#43C6F0;
-    --dark-color: #333333;
-    --transparent-color:#dbf7ff3f;
-}
-
-nav {
-    overflow: visible;
-    background: #dbf7ff3f;
-    position: sticky;
+.navbar {
     top: 0;
-    z-index: 100;
-}
-nav section {
-    display: flex;
-    width: 9vw;
-    justify-content: space-between;
-    align-items: baseline;
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(10px);
-    position:absolute;
-    top:0;
     left:0;
-    height: 40vh;
-    padding-bottom: 60vh;
-    padding-top: 8vh;
-    flex-direction: column;
-    gap:17vh;
-    box-shadow: -1px 4px 47.3px -4px rgba(67, 147, 240, 0.16);
-    border-radius: 0 10px 10px 0;
-    transition: 0.5s ease-in;
-    overflow: hidden;
+    width: 8vw;
+    height: 100vh;
+    position: fixed;
+    box-shadow: 12px 4px 47.4px -4px rgba(67, 147, 240, 0.16);
+    border-radius: 0.7rem;
+    transition: width 200ms cubic-bezier(1, 0.01, 0.58, 1);
+    background-color: white;
+    z-index: 2;
 }
-nav section div{
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    gap:2vh;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
-nav section a {
-    display: inline-flex;
-    color: #626262;
-    text-align: left;
-    padding: 1vw 2vw;
+
+.nav-item { 
+    border-radius: 0.5vw;
+    width: 80%;
+    margin: 0.5rem 0;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+    margin-bottom: 2vw;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 4rem;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: calc(0.75vh + 1vw);
-    font-family: 'Cascadia Mono SemiBold', sans-serif;
-    font-size: calc(1.25vh + 0.75vw);
-    text-align: center;
-}
-nav section div a img{
-    width: 5vw;
-    align-self: center;
-    border-radius: 10px;
-}
-nav section div a img:hover{
-    background-color: rgba(145, 145, 145, 0.5);
-}
-nav section div a p{
-    padding-left: 2vw;
-}
-.logo-nav {
-    width: 5vw;
-    padding-left: calc(50% - 2.5vw);
+    color: black;
+    justify-content: center;
+    
 }
 
-@media screen and (orientation:portrait) {
-    main{
-        left: 0;
-        width: 85vw;
-        padding-top: 5vh;
-        transition: none;
-    }
-    nav{
-        background-color: black;
-    }
-    nav section{
-        justify-content: center;
-        position: fixed;
-        top:unset;
-        bottom:0;
-        flex-direction: row;
-        height: unset;
-        width: 95vw;
-        padding: 1vh 2.5vw;
-        gap:3vw;
-        transition: none;
-    }
-    nav section div{
-        flex-direction: row;
-        gap:5vw;
-    }
-    nav section div a{
-        font-size: 3vw;
-    }
-    nav section div a img{
-        height: unset;
-        width: 8vw;
-        max-width: 10vw;
-        padding: unset;
-    }
-    .logo-nav {
-        position: absolute;
-        top: 50%;
-        left: 10%;
-        transform: translate(-50%,-50%);
-        visibility: hidden;
-    }
+.nav-link:hover {
+    background-color: #dbf7ff3f;
 }
 
+.link-text {
+    display: none;
+    margin-left: 0.4rem;
+    font-family: 'Cascadia Mono ExtraBold', sans-serif;
+    transition: 0.7s ease;
+}
+
+.nav-link img {
+    max-height: 2.5vw; 
+}
+
+.nav-link svg {
+    width: 1.5vw;
+    margin: 0 2.3vw;
+}
+
+.navbar:hover {
+    width: 13.5rem;
+}
+
+.navbar:hover .link-text {
+    display: block;
+    justify-content: start;
+}
+
+.navbar:hover .nav-link svg {
+    margin-right: 2.3vw; /* Adjust this value as needed */
+    margin-left: 0;
+}
