@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     hideAllCourseTaskContent();
 
-    document.querySelectorAll(".course-task").forEach(function (task) {
+    document.querySelectorAll(".task-header").forEach(function (task) {
         task.addEventListener("click", function () {
             toggleCourseTaskContent(this);
             rotateArrowIcon(this);

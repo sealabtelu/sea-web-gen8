@@ -11,10 +11,11 @@ body {
 
 nav {
     overflow: visible;
-    background: #f0fcff21;
+    background: #effcff00;
     position:fixed;
     top: 0;
     z-index: 100;
+    border-radius: 5%;
 }
 
 nav section{
@@ -23,8 +24,7 @@ nav section{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
     width: 90vw;
 }
 nav section .fa{

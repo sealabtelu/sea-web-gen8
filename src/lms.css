@@ -252,6 +252,9 @@ hr {
     margin: 0;
     font-size: 100%;
 }
+.task-header {
+    width: 100%;
+}
 
 .course-task-content {
     display: flex;
@@ -423,10 +426,32 @@ hr {
     color: white;
     font-weight: 700;
     height: 3vw;
-    max-width: 15vw;
+    max-width: 100%;
     border-color: transparent;
     font-size: 0.8vw;
     font-family: 'Poppins';
+}
+
+.tes_awal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 7vh 0;
+    padding: 0 3vw 3vh 2.5vw;
+}
+
+.tes_awal-container input {
+    margin-right: 1.5vw;
+}
+
+.tes_awal-container label {
+    font-size: 1.5vw;
+    display: flex;
+}
+.tes_awal-submit a button {
+    font-size: 1vw;
+    height: 3.5vw;
+    width: 12vw;
 }
 
 @media screen and (orientation: portrait) {
