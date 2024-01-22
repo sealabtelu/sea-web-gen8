@@ -243,8 +243,11 @@ hr {
     box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.25);
     color: var(--theme-color);
     max-height: 1000vw;
+    cursor: pointer;
 }
-
+.timeline-task{
+    flex-direction: row;
+}
 .task-header h2 {
     margin: 0;
     font-size: 100%;
@@ -414,13 +417,13 @@ hr {
     display: flex;
     justify-content: center;
 }
-.course-quiz button{
+.course-quiz a button{
     background-color: var(--theme-color);
     border-radius: 0.5vw;
     color: white;
     font-weight: 700;
     height: 3vw;
-    max-width: 15%;
+    max-width: 15vw;
     border-color: transparent;
     font-size: 0.8vw;
     font-family: 'Poppins';

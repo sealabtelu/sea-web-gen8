@@ -88,19 +88,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     hideAllCourseTaskContent();
 
-    document.querySelectorAll(".task-header").forEach(function (task) {
+    document.querySelectorAll(".course-task").forEach(function (task) {
         task.addEventListener("click", function () {
             toggleCourseTaskContent(this);
             rotateArrowIcon(this);
         });
     });
 
-    document.querySelectorAll(".close").forEach(function (closeBtn) {
-        closeBtn.addEventListener("click", function () {
-            toggleCourseTaskContent(this);
-            rotateArrowIcon(this);
-        });
-    });
 });
 
 
