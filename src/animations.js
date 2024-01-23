@@ -117,6 +117,8 @@ function hidedropdown(element) {
     toggleDropdown(element, false);
 }
 
+
+// Upload
 document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
     const dropZoneElement = inputElement.closest(".drop-zone");
 
@@ -172,3 +174,42 @@ function updateThumbnail(dropZoneElement, file) {
         thumbnailElement.style.backgroundImage = null;
     }
 }
+
+
+// DARKORLIGH
+document.addEventListener('DOMContentLoaded', function () {
+    nightmode= parseInt(localStorage.getItem("nightmode"));
+    TurnTheme(nightmode)
+    function TurnTheme(nightmode){
+        var text_item = (nightmode == 1) ? document.querySelectorAll('.light-text') : document.querySelectorAll('.dark-text');
+        var back_item = (nightmode == 1) ? document.querySelectorAll('.light-background') : document.querySelectorAll('.dark-background');
+        console.log(text_item,nightmode)
+        text_item.forEach(function(item){
+            if(nightmode == 1){
+                item.classList.remove('light-text');
+                item.classList.add('dark-text');
+            }
+            else{
+                item.classList.remove('dark-text');
+                item.classList.add('light-text');
+            }
+        });
+        back_item.forEach(function(item){
+            if(nightmode == 1){
+                item.classList.remove('light-background');
+                item.classList.add('dark-background');
+            }
+            else{
+                item.classList.remove('dark-background');
+                item.classList.add('light-background');
+            }
+        });
+    }
+    document.querySelectorAll(".toggle-theme").forEach(function (task) {
+        task.addEventListener("click", function () {
+            nightmode = (nightmode == 1) ? 0 : 1;
+            localStorage.setItem("nightmode", nightmode);
+            TurnTheme(nightmode)
+        });
+    });
+});

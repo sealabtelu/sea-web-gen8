@@ -4,9 +4,16 @@ body {
     font-family: 'Cascadia Mono', sans-serif;
     overflow-x: hidden;
 }
-
 .bodytohidenav{
     overflow-x: hidden;
+}
+
+:root{
+    --light-color:rgb(212, 231, 255);
+    --theme-color:#359cbf;
+    --dark-background: rgba(4, 17, 30, 0.8033);
+    --dark-color: #333333;
+    --transparent-color:#dbf7ff3f;
 }
 
 nav {
@@ -109,4 +116,17 @@ nav section div {
         padding: 1vw 1vw;
         transition: 0.25s;
     }
+}
+
+.light-text{
+    color: var(--dark-color);
+}
+.dark-text{
+    color: var(--light-color);
+}
+.light-background{
+    background-color: var(--light-color);
+}
+.dark-background{
+    background-color: var(--dark-background);
 }
