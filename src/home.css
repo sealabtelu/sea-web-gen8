@@ -20,7 +20,12 @@
 }
 
 .section1 {
-    background: linear-gradient(var(--dark-background),var(--dark-background)),url('assets/bg.png') center/cover;
+    background-image: 
+    radial-gradient(var(--dark-background) 1%, transparent 3%),
+    radial-gradient(var(--dark-background) 1%, transparent 3%);
+    background-position: 0px 0px, 51px 51px;
+    background-size: 102px 102px;
+    background-color: var(--dark-background);
     height: 130vh;
 }
 
@@ -60,16 +65,16 @@
     font-family: 'Cascadia Mono ExtraBold', sans-serif;
 }
 .button:hover {
-    background-color: #3598b97c;
+    background-color: #3598b99d;
     border-color: #3598b9;
     cursor: pointer;
 }
 .explore {
-    background-color: #dbf7ff3f;
+    background-color: #dbf7ff00;
     color: var(--theme-color);
 }
 .explore:hover {
-    background-color: #3598b97c;
+    background-color: #3598b9a4;
     border-color: #3598b9;  
     color: var(--light-color);
 }
