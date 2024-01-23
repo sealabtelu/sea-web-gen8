@@ -19,8 +19,12 @@ body{
     align-items: center;
     height: 100vh; 
     width: 100vw;
-    background-color: var(--transparent-color);
-    background: url('assets/bg.png');
+    background-image: 
+    radial-gradient(rgba(102, 117, 125, 0.751) 1%, transparent 3%),
+    radial-gradient(rgba(102, 117, 125, 0.751) 1%, transparent 3%);
+    background-position: 0px 0px, 51px 51px;
+    background-size: 102px 102px;
+    background-color: var(--dark-background);
 }
 
 .logo {
@@ -35,7 +39,7 @@ body{
 }
 
 .login-form {
-    background-color: var(--transparent-color);
+    background-color: rgba(33, 44, 55, 0.101);
     display: flex;
     flex-direction: column;
     justify-content: center;

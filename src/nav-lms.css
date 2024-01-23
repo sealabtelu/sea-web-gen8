@@ -1,13 +1,24 @@
+body{
+    margin: 0;
+
+}
 main {
     position: relative;
     top: 0;
-    left: 6vw;
+    left: -2vw;
     --width-main: 77vw;
     width: var(--width-main);
-    padding: 4vh 7.5vw;
+    padding: 6vh 15.5vw;
     font-family: 'Poppins';
     font-style: normal;
     transition: 0.5s ease-in;
+}
+:root{
+    --light-color:rgb(212, 231, 255);
+    --theme-color:#359cbf;
+    --dark-background: rgba(4, 17, 30, 0.8033);
+    --dark-color: #333333;
+    --transparent-color:#dbf7ff3f;
 }
 
 .navbar {
@@ -18,8 +29,8 @@ main {
     position: fixed;
     box-shadow: 12px 4px 47.4px -4px rgba(67, 147, 240, 0.16);
     border-radius: 0.7rem;
+    backdrop-filter: blur(30px);
     transition: width 200ms cubic-bezier(1, 0.01, 0.58, 1);
-    background-color: white;
     z-index: 2;
 }
 
@@ -50,7 +61,6 @@ main {
     align-items: center;
     height: 4rem;
     text-decoration: none;
-    color: black;
     justify-content: center;
     
 }
@@ -87,4 +97,17 @@ main {
 .navbar:hover .nav-link svg {
     margin-right: 2.3vw; /* Adjust this value as needed */
     margin-left: 0;
+}
+
+.light-text{
+    color: var(--dark-color);
+}
+.dark-text{
+    color: var(--light-color);
+}
+.light-background{
+    background-color: var(--light-color);
+}
+.dark-background{
+    background-color: var(--dark-background);
 }
