@@ -4,8 +4,9 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
 
 :root{
-    --light-color:rgb(243, 255, 254);
-    --theme-color:#43C6F0;
+    --light-color:rgb(212, 231, 255);
+    --theme-color:#359cbf;
+    --dark-background: rgba(4, 17, 30, 0.8033);
     --dark-color: #333333;
     --transparent-color:#dbf7ff3f;
 }
@@ -16,11 +17,10 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: var(--light-color);
 }
 
 .section1 {
-    background: var(--theme-color) url('assets/bg.png') center/cover;
+    background: linear-gradient(var(--dark-background),var(--dark-background)),url('assets/bg.png') center/cover;
     height: 130vh;
 }
 
@@ -32,9 +32,7 @@
     font-size: calc(3vw + 3vh);
     font-family: 'Cascadia Mono ExtraBold', sans-serif;
 }
-.welcome {
-    color: var(--dark-color);
-}
+
 .lab-text {
     color: var(--theme-color);
 }
@@ -62,16 +60,17 @@
     font-family: 'Cascadia Mono ExtraBold', sans-serif;
 }
 .button:hover {
-    background-color: #3598b9;
+    background-color: #3598b97c;
     border-color: #3598b9;
     cursor: pointer;
 }
-.content.section1 .buttons .button.explore {
+.explore {
     background-color: #dbf7ff3f;
     color: var(--theme-color);
 }
-.content.section1 .buttons .button.explore:hover {
-    background-color: #3598b9;
+.explore:hover {
+    background-color: #3598b97c;
+    border-color: #3598b9;  
     color: var(--light-color);
 }
 
@@ -80,8 +79,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #0b0a0a;
-    background-color: #dbf7ff3f;
 }
 .section2-content {
     text-align: center;
@@ -159,7 +156,7 @@
 
 
 .section3 {
-    background: var(--theme-color) url('assets/bg-section3.png') center/cover;
+    background: var(--dark-background) url('assets/bg-section3.png') center/cover;
 }
 .content.section3 {
     display: flex;
@@ -167,7 +164,6 @@
     justify-content: center;
     align-items: center;
     color: #0b0a0a;
-    border-radius: 10px 10px 0 0;
 }
 .section3-content {
     text-align: center;
@@ -304,7 +300,18 @@ footer {
     width: 3.5vw; /* Adjust the size as needed */
 }
 
-
+.light-text{
+    color: var(--dark-color);
+}
+.dark-text{
+    color: var(--light-color);
+}
+.light-background{
+    background-color: var(--light-color);
+}
+.dark-background{
+    background-color: var(--dark-background);
+}
 @media screen and (orientation:portrait) {
     .section1{
         height: 100vh;

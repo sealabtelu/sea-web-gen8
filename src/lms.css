@@ -447,6 +447,8 @@ hr {
 .tes_awal-container label {
     font-size: 1.5vw;
     display: flex;
+    width: 100%;
+    cursor: pointer;
 }
 .tes_awal-submit a button {
     font-size: 1vw;
