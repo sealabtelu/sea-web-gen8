@@ -21,8 +21,8 @@
 
 .section1 {
     background-image: 
-    radial-gradient(var(--dark-background) 1%, transparent 3%),
-    radial-gradient(var(--dark-background) 1%, transparent 3%);
+    radial-gradient(rgba(102, 117, 125, 0.751) 1%, transparent 3%),
+    radial-gradient(rgba(102, 117, 125, 0.751) 1%, transparent 3%);
     background-position: 0px 0px, 51px 51px;
     background-size: 102px 102px;
     background-color: var(--dark-background);
