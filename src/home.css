@@ -20,7 +20,12 @@
 }
 
 .section1 {
-    background: var(--theme-color) url('assets/bg.png') center/cover;
+    background-image: 
+    radial-gradient(rgb(214, 214, 214) 1%, transparent 3%),
+    radial-gradient(rgb(214, 214, 214) 1%, transparent 3%);
+    background-position: 0px 0px, 51px 51px;
+    background-size: 102px 102px;
+    background-color: rgb(255, 255, 255);
     height: 130vh;
 }
 
@@ -99,7 +104,6 @@
     margin-top: 10vh;
 }
 
-
 .card {
     background-color: var(--theme-color); 
     color: white;
@@ -167,7 +171,6 @@
     justify-content: center;
     align-items: center;
     color: #0b0a0a;
-    border-radius: 10px 10px 0 0;
 }
 .section3-content {
     text-align: center;
