@@ -181,29 +181,65 @@ document.addEventListener('DOMContentLoaded', function () {
     nightmode= parseInt(localStorage.getItem("nightmode"));
     TurnTheme(nightmode)
     function TurnTheme(nightmode){
-        var text_item = (nightmode == 1) ? document.querySelectorAll('.light-text') : document.querySelectorAll('.dark-text');
-        var back_item = (nightmode == 1) ? document.querySelectorAll('.light-background') : document.querySelectorAll('.dark-background');
-        console.log(text_item,nightmode)
+        var text_item = (nightmode == 1) ? document.querySelectorAll('.light-text,.light-text-reverse') : document.querySelectorAll('.dark-text,.dark-text-reverse');
+        var back_item = (nightmode == 1) ? document.querySelectorAll('.light-background,.light-background-reverse') : document.querySelectorAll('.dark-background,.dark-background-reverse');
+        var sec3home = document.querySelector('.content.section3'); 
+
         text_item.forEach(function(item){
             if(nightmode == 1){
-                item.classList.remove('light-text');
-                item.classList.add('dark-text');
+                if (item.classList.contains('light-text')){
+                    item.classList.remove('light-text');
+                    item.classList.add('dark-text');
+                }
+                else{
+                    item.classList.remove('light-text-reverse');
+                    item.classList.add('dark-text-reverse');
+                }
             }
             else{
-                item.classList.remove('dark-text');
-                item.classList.add('light-text');
+                if (item.classList.contains('dark-text')){
+                    item.classList.remove('dark-text');
+                    item.classList.add('light-text');
+                }
+                else{
+                    item.classList.remove('dark-text-reverse');
+                    item.classList.add('light-text-reverse');
+                }
             }
         });
         back_item.forEach(function(item){
             if(nightmode == 1){
-                item.classList.remove('light-background');
-                item.classList.add('dark-background');
+                if (item.classList.contains('light-background')){
+                    item.classList.remove('light-background');
+                    item.classList.add('dark-background');
+                }
+                else{
+                    item.classList.remove('light-background-reverse');
+                    item.classList.add('dark-background-reverse');
+                }
             }
             else{
-                item.classList.remove('dark-background');
-                item.classList.add('light-background');
+                if (item.classList.contains('dark-background')){
+                    item.classList.remove('dark-background');
+                    item.classList.add('light-background');
+                }
+                else{
+                    item.classList.remove('dark-background-reverse');
+                    item.classList.add('light-background-reverse');
+                }
             }
         });
+        
+        if(sec3home){
+            if(nightmode == 1){
+                sec3home.classList.remove('theme-background');
+                sec3home.classList.add('dark-background');
+            }
+            else{
+                sec3home.classList.remove('dark-background');
+                sec3home.classList.add('theme-background');
+            }
+        };
     }
     document.querySelectorAll(".toggle-theme").forEach(function (task) {
         task.addEventListener("click", function () {

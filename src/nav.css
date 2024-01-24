@@ -130,3 +130,21 @@ nav section div {
 .dark-background{
     background-color: var(--dark-background);
 }
+.light-text-reverse{
+    color: var(--light-color);
+}
+.dark-text-reverse{
+    color: var(--dark-color);
+}
+.light-background-reverse{
+    background-color: var(--dark-background);
+}
+.dark-background-reverse{
+    background-color: var(--light-color);
+}
+.theme-text{
+    color:var(--theme-color);
+}
+.theme-background{
+    background-color: var(--theme-color);
+}
