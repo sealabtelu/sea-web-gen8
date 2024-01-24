@@ -16,7 +16,7 @@ body {
     --transparent-color:#dbf7ff3f;
     --light-card: var(--theme-color);
     --dark-card: var(--transparent-color);
-    --light-cardtext: rgb(67, 197, 240);
+    --light-cardtext: var(--theme-color);
     --dark-cardtext: var(--light-color);
 }
 
@@ -122,18 +122,6 @@ nav section div {
     }
 }
 
-.light-text{
-    color: var(--dark-color);
-}
-.dark-text{
-    color: var(--light-color);
-}
-.light-background{
-    background-color: var(--light-color);
-}
-.dark-background{
-    background-color: var(--dark-background);
-}
 .dark-card{
     background-color: var(--dark-color);
 }
@@ -158,8 +146,20 @@ nav section div {
 .dark-background-reverse{
     background-color: var(--light-color);
 }
+.light-text{
+    color: var(--dark-color);
+}
+.dark-text{
+    color: var(--light-color);
+}
 .theme-text{
     color:var(--theme-color);
+}
+.light-background{
+    background-color: var(--light-color);
+}
+.dark-background{
+    background-color: var(--dark-background);
 }
 .theme-background{
     background-color: var(--theme-color);

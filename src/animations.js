@@ -185,8 +185,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var back_item = (nightmode == 1) ? document.querySelectorAll('.light-background,.light-background-reverse') : document.querySelectorAll('.dark-background,.dark-background-reverse');
         var card_item = (nightmode == 1) ? document.querySelectorAll('.light-card') : document.querySelectorAll('.dark-card');
         var card_text_item = (nightmode == 1) ? document.querySelectorAll('.light-card-text') : document.querySelectorAll('.dark-card-text');
-        var sec3home = document.querySelector('.content.section3'); 
-
+        
         text_item.forEach(function(item){
             if(nightmode == 1){
                 if (item.classList.contains('light-text')){
@@ -252,16 +251,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
         
-        if(sec3home){
-            if(nightmode == 1){
-                sec3home.classList.remove('theme-background');
-                sec3home.classList.add('dark-background');
-            }
-            else{
-                sec3home.classList.remove('dark-background');
-                sec3home.classList.add('theme-background');
-            }
-        };
     }
     document.querySelectorAll(".toggle-theme").forEach(function (task) {
         task.addEventListener("click", function () {
