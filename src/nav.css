@@ -9,11 +9,15 @@ body {
 }
 
 :root{
-    --light-color:rgb(212, 231, 255);
-    --theme-color:#359cbf;
-    --dark-background: rgba(4, 17, 30, 0.8033);
+    --light-color:rgb(250, 255, 255);
+    --theme-color:rgb(67, 197, 240);
+    --dark-background: #4b4b4b;
     --dark-color: #333333;
     --transparent-color:#dbf7ff3f;
+    --light-card: var(--theme-color);
+    --dark-card: var(--transparent-color);
+    --light-cardtext: rgb(67, 197, 240);
+    --dark-cardtext: var(--light-color);
 }
 
 nav {
@@ -129,6 +133,18 @@ nav section div {
 }
 .dark-background{
     background-color: var(--dark-background);
+}
+.dark-card{
+    background-color: var(--dark-color);
+}
+.light-card{
+    background-color: var(--light-card);
+}
+.dark-card-text{
+    color: var(--dark-cardtext);
+}
+.light-card-text{
+    color: var(--light-cardtext);
 }
 .light-text-reverse{
     color: var(--light-color);

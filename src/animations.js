@@ -183,6 +183,8 @@ document.addEventListener('DOMContentLoaded', function () {
     function TurnTheme(nightmode){
         var text_item = (nightmode == 1) ? document.querySelectorAll('.light-text,.light-text-reverse') : document.querySelectorAll('.dark-text,.dark-text-reverse');
         var back_item = (nightmode == 1) ? document.querySelectorAll('.light-background,.light-background-reverse') : document.querySelectorAll('.dark-background,.dark-background-reverse');
+        var card_item = (nightmode == 1) ? document.querySelectorAll('.light-card') : document.querySelectorAll('.dark-card');
+        var card_text_item = (nightmode == 1) ? document.querySelectorAll('.light-card-text') : document.querySelectorAll('.dark-card-text');
         var sec3home = document.querySelector('.content.section3'); 
 
         text_item.forEach(function(item){
@@ -227,6 +229,26 @@ document.addEventListener('DOMContentLoaded', function () {
                     item.classList.remove('dark-background-reverse');
                     item.classList.add('light-background-reverse');
                 }
+            }
+        });
+        card_item.forEach(function(item){
+            if(nightmode == 1){
+                item.classList.remove('light-card');
+                item.classList.add('dark-card');
+            }
+            else{
+                item.classList.remove('dark-card');
+                item.classList.add('light-card');
+            }
+        });
+        card_text_item.forEach(function(item){
+            if(nightmode == 1){
+                item.classList.remove('light-card-text');
+                item.classList.add('dark-card-text');
+            }
+            else{
+                item.classList.remove('dark-card-text');
+                item.classList.add('light-card-text');
             }
         });
         
