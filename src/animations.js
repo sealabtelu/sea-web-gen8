@@ -117,6 +117,8 @@ function hidedropdown(element) {
     toggleDropdown(element, false);
 }
 
+
+// Upload
 document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
     const dropZoneElement = inputElement.closest(".drop-zone");
 
@@ -172,3 +174,64 @@ function updateThumbnail(dropZoneElement, file) {
         thumbnailElement.style.backgroundImage = null;
     }
 }
+
+
+// DARKORLIGH
+document.addEventListener('DOMContentLoaded', function () {
+    nightmode= parseInt(localStorage.getItem("nightmode"));
+    TurnTheme(nightmode)
+    function TurnTheme(nightmode){
+        var text_item = (nightmode == 1) ? document.querySelectorAll('.light-text') : document.querySelectorAll('.dark-text');
+        var back_item = (nightmode == 1) ? document.querySelectorAll('.light-background') : document.querySelectorAll('.dark-background');
+        var card_item = (nightmode == 1) ? document.querySelectorAll('.light-card') : document.querySelectorAll('.dark-card');
+        var card_text_item = (nightmode == 1) ? document.querySelectorAll('.light-card-text') : document.querySelectorAll('.dark-card-text');
+        console.log(text_item,nightmode)
+        text_item.forEach(function(item){
+            if(nightmode == 1){
+                item.classList.remove('light-text');
+                item.classList.add('dark-text');
+            }
+            else{
+                item.classList.remove('dark-text');
+                item.classList.add('light-text');
+            }
+        });
+        back_item.forEach(function(item){
+            if(nightmode == 1){
+                item.classList.remove('light-background');
+                item.classList.add('dark-background');
+            }
+            else{
+                item.classList.remove('dark-background');
+                item.classList.add('light-background');
+            }
+        });
+        card_item.forEach(function(item){
+            if(nightmode == 1){
+                item.classList.remove('light-card');
+                item.classList.add('dark-card');
+            }
+            else{
+                item.classList.remove('dark-card');
+                item.classList.add('light-card');
+            }
+        });
+        card_text_item.forEach(function(item){
+            if(nightmode == 1){
+                item.classList.remove('light-card-text');
+                item.classList.add('dark-card-text');
+            }
+            else{
+                item.classList.remove('dark-card-text');
+                item.classList.add('light-card-text');
+            }
+        });
+    }
+    document.querySelectorAll(".toggle-theme").forEach(function (task) {
+        task.addEventListener("click", function () {
+            nightmode = (nightmode == 1) ? 0 : 1;
+            localStorage.setItem("nightmode", nightmode);
+            TurnTheme(nightmode)
+        });
+    });
+});

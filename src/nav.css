@@ -4,9 +4,20 @@ body {
     font-family: 'Cascadia Mono', sans-serif;
     overflow-x: hidden;
 }
-
 .bodytohidenav{
     overflow-x: hidden;
+}
+
+:root{
+    --light-color:rgb(250, 255, 255);
+    --theme-color:rgb(67, 197, 240);
+    --dark-background: #4b4b4b;
+    --dark-color: #333333;
+    --transparent-color:#dbf7ff3f;
+    --light-card: var(--theme-color);
+    --dark-card: var(--transparent-color);
+    --light-cardtext: rgb(67, 197, 240);
+    --dark-cardtext: var(--light-color);
 }
 
 nav {
@@ -109,4 +120,29 @@ nav section div {
         padding: 1vw 1vw;
         transition: 0.25s;
     }
+}
+
+.light-text{
+    color: var(--dark-color);
+}
+.dark-text{
+    color: var(--light-color);
+}
+.light-background{
+    background-color: var(--light-color);
+}
+.dark-background{
+    background-color: var(--dark-background);
+}
+.dark-card{
+    background-color: var(--dark-color);
+}
+.light-card{
+    background-color: var(--light-card);
+}
+.dark-card-text{
+    color: var(--dark-cardtext);
+}
+.light-card-text{
+    color: var(--light-cardtext);
 }
