@@ -62,7 +62,6 @@ main {
     height: 4rem;
     text-decoration: none;
     justify-content: center;
-    
 }
 
 .nav-link:hover {
@@ -98,6 +97,40 @@ main {
     margin-right: 2.3vw; /* Adjust this value as needed */
     margin-left: 0;
 }
+@media screen and (orientation:portrait) {
+    main {
+        padding: 7.5vh 12.5vw;
+        margin: 0;
+    }
+    .navbar {
+        top:unset;
+        bottom: 0;
+        width: 100vw;
+        max-height: 10vh;
+    }
+    
+    .navbar-nav {
+        flex-direction: row;
+    }
+    .nav-link img {
+        max-height: 5vw; 
+    }
+    .nav-link svg {
+        width: 5vw;
+    }
+    .navbar:hover {
+        width: 100vw;
+    }
+    .navbar:hover .link-text {
+        display: none;
+    }
+    .navbar:hover .nav-link svg {
+        margin: 0 2.3vw;
+    }
+    .nav-item:last-child {
+        margin: 0.5rem 0;
+    }
+}
 
 .light-text{
     color: var(--dark-color);
@@ -110,4 +143,22 @@ main {
 }
 .dark-background{
     background-color: var(--dark-background);
+}
+.light-text-reverse{
+    color: var(--light-color);
+}
+.dark-text-reverse{
+    color: var(--dark-color);
+}
+.light-background-reverse{
+    background-color: var(--dark-background);
+}
+.dark-background-reverse{
+    background-color: var(--light-color);
+}
+.theme-text{
+    color:var(--theme-color);
+}
+.theme-background{
+    background-color: var(--theme-color);
 }
