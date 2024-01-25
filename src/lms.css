@@ -55,7 +55,7 @@
 }
 
 .content h2 {
-    font-size: 1.5vw;
+    font-size: 2.5vh;
 }
 
 .content button {
@@ -239,6 +239,7 @@ hr {
 }
 .timeline-task{
     flex-direction: row;
+    align-items: center;
 }
 .task-header h2 {
     margin: 0;
