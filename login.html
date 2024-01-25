@@ -9,18 +9,16 @@
     <link rel="stylesheet" href="src/nav-lms.css">
 </head>
 
-<body>
-    <div class="container-login dark-background">
-        <div class="logo">
-            <a href="index.html"><img src="src\assets\SEA-logo.png" alt="SEA-logo"></a>
-        </div>
-        <div class="login-form dark-text">
-            <h1>WELCOME TO<br>SEA LABORATORY LMS</h1>
-            <form action="lms.html">
-                <h2>Username/NIM</h2>
-                <input type="text" id="username" name="username" placeholder="SSO Username or NIM">
-                <h2>Password</h2>
-                <input type="password" id="password" name="password" placeholder="∗∗∗∗∗∗∗∗∗∗∗∗"><br><br>
+<body class="dark-background">
+    <div class="container-login">
+        <div class="login-form dark-card">
+            <a href="index.html"><img class="logo" src="src\assets\SEA-logo.png"></img></a>
+            <h1 class="dark-text">Welcome To<br>Sea Laboratory LMS</h1>
+            <form class="input-form dark-text" action="lms.html">
+                <h2 class="dark-text">Username/NIM</h2>
+                <input class="dark-text" type="username" id="username" name="username" placeholder="SSO Username or NIM">
+                <h2 class="dark-text">Password</h2>
+                <input class="dark-text" type="password" id="password" name="password" placeholder="∗∗∗∗∗∗∗∗∗∗∗∗"><br><br>
                 <input type="submit" value="LOGIN">
             </form>
         </div>

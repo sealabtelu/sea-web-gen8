@@ -5,20 +5,22 @@ body{
 main {
     position: relative;
     top: 0;
-    left: -2vw;
-    --width-main: 77vw;
+    left: 13vw;
+    --width-main: 82%;
     width: var(--width-main);
-    padding: 6vh 15.5vw;
+    padding: 1vw 0;
     font-family: 'Poppins';
     font-style: normal;
     transition: 0.5s ease-in;
 }
 :root{
-    --light-color:rgb(212, 231, 255);
-    --theme-color:#359cbf;
-    --dark-background: rgba(4, 17, 30, 0.8033);
+    --light-color:rgb(250, 255, 255);
+    --theme-color:rgb(67, 197, 240);
+    --dark-background: #4b4b4b;
     --dark-color: #333333;
     --transparent-color:#dbf7ff3f;
+    --light-card: var(--light-color);
+    --dark-card: #252525;
 }
 
 .navbar {
@@ -28,8 +30,8 @@ main {
     height: 100vh;
     position: fixed;
     box-shadow: 12px 4px 47.4px -4px rgba(67, 147, 240, 0.16);
-    border-radius: 0.7rem;
-    backdrop-filter: blur(30px);
+    border-radius: 1rem;
+    backdrop-filter: blur(100px);
     transition: width 200ms cubic-bezier(1, 0.01, 0.58, 1);
     z-index: 2;
 }
@@ -37,7 +39,7 @@ main {
 .navbar-nav {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 1vw 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,17 +134,17 @@ main {
     }
 }
 
-.light-text{
-    color: var(--dark-color);
+.dark-card{
+    background-color: var(--dark-color);
 }
-.dark-text{
-    color: var(--light-color);
+.light-card{
+    background-color: var(--light-card);
 }
-.light-background{
-    background-color: var(--light-color);
+.dark-card-text{
+    color: var(--dark-cardtext);
 }
-.dark-background{
-    background-color: var(--dark-background);
+.light-card-text{
+    color: var(--light-cardtext);
 }
 .light-text-reverse{
     color: var(--light-color);
@@ -156,8 +158,20 @@ main {
 .dark-background-reverse{
     background-color: var(--light-color);
 }
+.light-text{
+    color: var(--dark-color);
+}
+.dark-text{
+    color: var(--light-color);
+}
 .theme-text{
     color:var(--theme-color);
+}
+.light-background{
+    background-color: var(--light-color);
+}
+.dark-background{
+    background-color: var(--dark-background);
 }
 .theme-background{
     background-color: var(--theme-color);
