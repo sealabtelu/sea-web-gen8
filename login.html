@@ -10,19 +10,21 @@
 </head>
 
 <body class="dark-background">
-    <div class="container-login">
-        <div class="login-form dark-card">
+    <div class="login-card dark-card">
             <a href="index.html"><img class="logo" src="src\assets\SEA-logo.png"></img></a>
-            <h1 class="dark-text">Welcome To<br>Sea Laboratory LMS</h1>
-            <form class="input-form dark-text" action="lms.html">
-                <h2 class="dark-text">Username/NIM</h2>
-                <input class="dark-text" type="username" id="username" name="username" placeholder="SSO Username or NIM">
-                <h2 class="dark-text">Password</h2>
-                <input class="dark-text" type="password" id="password" name="password" placeholder="∗∗∗∗∗∗∗∗∗∗∗∗"><br><br>
-                <input type="submit" value="LOGIN">
-            </form>
+            <div class="login-header dark-text">
+                <h1>Welcome To<br>Sea Laboratory LMS</h1>
+            </div>
+            <div class="login-form">
+                <form class="input-form" action="lms.html">
+                    <h2 class="dark-text">Username/NIM</h2>
+                    <input class="dark-text dark-card" type="username" id="username" name="username" placeholder="SSO Username or NIM">
+                    <h2 class="dark-text">Password</h2>
+                    <input class="dark-text dark-card" type="password" id="password" name="password" placeholder="∗∗∗∗∗∗∗∗∗∗∗∗"><br><br>
+                    <input type="submit" value="LOGIN">
+                </form>
+            </div>
         </div>
-    </div>
     <script src="src/animations.js"></script>
 </body>
 </html>
