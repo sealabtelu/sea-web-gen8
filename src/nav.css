@@ -4,17 +4,29 @@ body {
     font-family: 'Cascadia Mono', sans-serif;
     overflow-x: hidden;
 }
-
 .bodytohidenav{
     overflow-x: hidden;
 }
 
+:root{
+    --light-color:rgb(250, 255, 255);
+    --theme-color:rgb(67, 197, 240);
+    --dark-background: #4b4b4b;
+    --dark-color: #333333;
+    --transparent-color:#dbf7ff3f;
+    --light-card: var(--theme-color);
+    --dark-card: var(--transparent-color);
+    --light-cardtext: var(--theme-color);
+    --dark-cardtext: var(--light-color);
+}
+
 nav {
     overflow: visible;
-    background: #f0fcff21;
+    background: #effcff00;
     position:fixed;
     top: 0;
     z-index: 100;
+    border-radius: 5%;
 }
 
 nav section{
@@ -23,8 +35,7 @@ nav section{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
     width: 90vw;
 }
 nav section .fa{
@@ -109,4 +120,47 @@ nav section div {
         padding: 1vw 1vw;
         transition: 0.25s;
     }
+}
+
+.dark-card{
+    background-color: var(--dark-color);
+}
+.light-card{
+    background-color: var(--light-card);
+}
+.dark-card-text{
+    color: var(--dark-cardtext);
+}
+.light-card-text{
+    color: var(--light-cardtext);
+}
+.light-text-reverse{
+    color: var(--light-color);
+}
+.dark-text-reverse{
+    color: var(--dark-color);
+}
+.light-background-reverse{
+    background-color: var(--dark-background);
+}
+.dark-background-reverse{
+    background-color: var(--light-color);
+}
+.light-text{
+    color: var(--dark-color);
+}
+.dark-text{
+    color: var(--light-color);
+}
+.theme-text{
+    color:var(--theme-color);
+}
+.light-background{
+    background-color: var(--light-color);
+}
+.dark-background{
+    background-color: var(--dark-background);
+}
+.theme-background{
+    background-color: var(--theme-color);
 }
